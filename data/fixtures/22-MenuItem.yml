@@ -1,0 +1,34 @@
+MenuItem:
+  NestedSet:		true
+  testroot:
+    name: Корневой тестовый пункт меню
+    link: "http://mattino.web.trueoffice.org/issues/197"
+    Permission: can_index_topic
+    children:
+      testroot2:
+        name: Тестовый подпункт меню 2
+        link: "http://mattino.web.trueoffice.org/issues/197"
+        Permission: can_create_ticket
+      testroot3:
+        name: Тестовый подпункт меню 3
+        link: "http://mattino.web.trueoffice.org/issues/197"
+        Permission: can_add_commentary
+      testroot4:
+        name: Тестовый подпункт меню 4
+        link: "http://mattino.web.trueoffice.org/issues/197"
+        Permission: foreign_auth
+        children:
+          testroot5:
+            name: Тестовый подпункт меню 5
+            link: "http://mattino.web.trueoffice.org/issues/197"
+            Permission: can_show_organization_private
+  test:
+    name: Тестовый подпункт меню
+    link: "http://mattino.web.trueoffice.org/issues/197"
+    Permission: can_show_config_files
+    children: []
+  test2:
+    name: Другой тестовый подпункт меню
+    link: "http://mattino.web.trueoffice.org/issues/197"
+    Permission: can_observe_machines
+    children: []

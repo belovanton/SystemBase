@@ -1,0 +1,151 @@
+Jan 17 17:28:07 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|Принять выгрузку из ЦО (v8)|Автообмен #3|Выполняется действие|
+Jan 17 18:15:57 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor||Сообщить на сайт о выполнении задачи "Принять выгрузку из ЦО (v8)"|Подключение к FTP...|
+Jan 17 18:15:57 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor||Сообщить на сайт о выполнении задачи "Принять выгрузку из ЦО (v8)"|Заход на FTP...|
+Jan 17 18:15:57 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor||Сообщить на сайт о выполнении задачи "Принять выгрузку из ЦО (v8)"|Смена директории на '/executor/sells/' ...|
+Jan 17 18:21:55 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 18:40:55 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 19:07:55 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 19:11:56 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 19:18:55 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 19:21:55 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 19:22:55 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 19:26:59 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Подключение к FTP...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Заход на FTP...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Смена директории на '/executor/sells/' ...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Выполнение операции SIZE '/executor/sells/' ...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Не возможно выяснить размер файла /executor/sells///executor/sells/sl2012011720505415000000109.dbf. Возможно файла нет или доступ к файлу запрещен настройками FTP-сервера.|EnterpriseDT.Net.Ftp.FTPException: /executor/sells/sl2012011720505415000000109.dbf: No such file or directory (code=550)#015#012 в EnterpriseDT.Net.Ftp.FTPControlSocket.ValidateReply(FTPReply reply, String expectedReplyCode)#015#012 в EnterpriseDT.Net.Ftp.FTPClient.Size(String remoteFile)#015#012 в DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Разрыв соединения с FTP...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Размер файла не был выявлен.|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Завершение процесса получения размера файла...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |1c_upload:dTSzV43@mattino.mattino.ru: 0||
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |END||
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize0|1c_upload:dTSzV43@www2.mattino.ru|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Подключение к FTP...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Заход на FTP...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Смена директории на '/executor/sells/' ...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Выполнение операции SIZE '/executor/sells/' ...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|-------------------------------------------------|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Подключение к FTP...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|--------------- Программа запущена --------------|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|-------------------------------------------------|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Заход на FTP...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Смена директории на '/executor/sells/' ...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Выполнение операции SIZE '/executor/sells/' ...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Не возможно выяснить размер файла /executor/sells///executor/sells/sl2012012613110115000000001.dbf. Возможно файла нет или доступ к файлу запрещен настройками FTP-сервера.|EnterpriseDT.Net.Ftp.FTPException: /executor/sells/sl2012012613110115000000001.dbf: No such file or directory (code=550)#015#012 в EnterpriseDT.Net.Ftp.FTPControlSocket.ValidateReply(FTPReply reply, String expectedReplyCode)#015#012 в EnterpriseDT.Net.Ftp.FTPClient.Size(String remoteFile)#015#012 в DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Разрыв соединения с FTP...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Размер файла не был выявлен.|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Завершение процесса получения размера файла...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |1c_upload:dTSzV43@mattino.mattino.ru: 0||
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |END||
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize0|1c_upload:dTSzV43@www2.mattino.ru|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Подключение к FTP...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Заход на FTP...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Смена директории на '/executor/sells/' ...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Выполнение операции SIZE '/executor/sells/' ...|
+Jan 26 15:29:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|Принять выгрузку из ЦО (v8)|Перименование: к имени файла префикс "_" #2|Выполняется действие|
+Jan 26 15:29:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|Принять выгрузку из ЦО (v8)|Выгрузка на FTP в ЦО #2|Выполняется действие|
+Jan 26 16:10:03 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 16:18:02 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 16:35:02 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 16:50:02 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 17:06:02 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 17:14:36 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|Принять выгрузку из ЦО (v8)|Автообмен #3|Выполняется действие|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Подключение к FTP...|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Заход на FTP...|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Смена директории на '/executor/sells/' ...|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Выполнение операции SIZE '/executor/sells/' ...|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Не возможно выяснить размер файла /executor/sells///executor/sells/sl2012012616030415000000025.dbf. Возможно файла нет или доступ к файлу запрещен настройками FTP-сервера.|EnterpriseDT.Net.Ftp.FTPException: /executor/sells/sl2012012616030415000000025.dbf: No such file or directory (code=550)#015#012 в EnterpriseDT.Net.Ftp.FTPControlSocket.ValidateReply(FTPReply reply, String expectedReplyCode)#015#012 в EnterpriseDT.Net.Ftp.FTPClient.Size(String remoteFile)#015#012 в DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Разрыв соединения с FTP...|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Размер файла не был выявлен.|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Завершение процесса получения размера файла...|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |1c_upload:dTSzV43@mattino.mattino.ru: 0||
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |END||
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize0|1c_upload:dTSzV43@www2.mattino.ru|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Подключение к FTP...|
+Jan 26 17:18:03 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 18:24:04 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor||Сообщить на сайт о выполнении задачи "Принять выгрузку из ЦО (v8)"|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 18:25:13 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|Принять выгрузку из ЦО (v8)|Перименование: к имени файла префикс "_" #2|Выполняется действие|
+Jan 26 18:25:13 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|Принять выгрузку из ЦО (v8)|Выгрузка на FTP в ЦО #2|Выполняется действие|
+Jan 26 18:25:13 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|Принять выгрузку из ЦО (v8)|Переименовать файл на FTP|Выполняется действие|
+Jan 26 18:25:13 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|Принять выгрузку из ЦО (v8)|Сообщить на сайт о выполнении задачи "Принять выгрузку из ЦО (v8)"|Выполняется действие|
+Jan 26 18:25:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|Принять выгрузку из ЦО (v8)|Сообщить на сайт о выполнении задачи "Принять выгрузку из ЦО (v8)"|Окончание выполнение задачи|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|Аутентификация|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|Смена директории на /executor/sells|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|Переименование файла|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Подключение к FTP...|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Заход на FTP...|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Смена директории на '/executor/sells/' ...|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Выполнение операции SIZE '/executor/sells/' ...|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Не возможно выяснить размер файла /executor/sells///executor/sells/sl2012012617340115000000046.dbf. Возможно файла нет или доступ к файлу запрещен настройками FTP-сервера.|EnterpriseDT.Net.Ftp.FTPException: /executor/sells/sl2012012617340115000000046.dbf: No such file or directory (code=550)#015#012 в EnterpriseDT.Net.Ftp.FTPControlSocket.ValidateReply(FTPReply reply, String expectedReplyCode)#015#012 в EnterpriseDT.Net.Ftp.FTPClient.Size(String remoteFile)#015#012 в DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Разрыв соединения с FTP...|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Размер файла не был выявлен.|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Завершение процесса получения размера файла...|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |1c_upload:dTSzV43@mattino.mattino.ru: 0||
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |END||
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize0|1c_upload:dTSzV43@www2.mattino.ru|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Подключение к FTP...|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Заход на FTP...|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Подключение к FTP...|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Заход на FTP...|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Смена директории на '/executor/sells/' ...|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Выполнение операции SIZE '/executor/sells/' ...|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Не возможно выяснить размер файла /executor/sells///executor/sells/sl2012012617405815000000047.dbf. Возможно файла нет или доступ к файлу запрещен настройками FTP-сервера.|EnterpriseDT.Net.Ftp.FTPException: /executor/sells/sl2012012617405815000000047.dbf: No such file or directory (code=550)#015#012 в EnterpriseDT.Net.Ftp.FTPControlSocket.ValidateReply(FTPReply reply, String expectedReplyCode)#015#012 в EnterpriseDT.Net.Ftp.FTPClient.Size(String remoteFile)#015#012 в DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Разрыв соединения с FTP...|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Размер файла не был выявлен.|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Завершение процесса получения размера файла...|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |1c_upload:dTSzV43@mattino.mattino.ru: 0||
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |END||
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize0|1c_upload:dTSzV43@www2.mattino.ru|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Подключение к FTP...|
+Jan 26 19:10:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Подключение к FTP...|
+Jan 26 19:10:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Заход на FTP...|
+Jan 26 19:10:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Смена директории на '/executor/sells/' ...|
+Jan 26 19:10:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Выполнение операции SIZE '/executor/sells/' ...|
+Jan 26 19:16:30 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Выполнение операции SIZE '/executor/sells/' ...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Не возможно выяснить размер файла /executor/sells///executor/sells/sl2012012618161215000000053.dbf. Возможно файла нет или доступ к файлу запрещен настройками FTP-сервера.|EnterpriseDT.Net.Ftp.FTPException: /executor/sells/sl2012012618161215000000053.dbf: No such file or directory (code=550)#015#012 в EnterpriseDT.Net.Ftp.FTPControlSocket.ValidateReply(FTPReply reply, String expectedReplyCode)#015#012 в EnterpriseDT.Net.Ftp.FTPClient.Size(String remoteFile)#015#012 в DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Разрыв соединения с FTP...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Размер файла не был выявлен.|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Завершение процесса получения размера файла...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize0|1c_upload:dTSzV43@www2.mattino.ru: 0||
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize0 |END||
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Подключение к FTP...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Заход на FTP...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Смена директории на '/executor/sells/' ...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Загрузка файла на FTP...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Разрыв соединения с FTP...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Завершение загрузки с FTP...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|Подключение к FTP-серверу|
+Jan 26 19:25:30 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 19:32:30 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 20:25:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Подключение к FTP...|
+Jan 26 20:25:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Заход на FTP...|
+Jan 26 20:25:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Смена директории на '/executor/sells/' ...|
+Jan 26 20:25:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Выполнение операции SIZE '/executor/sells/' ...|
+Jan 26 20:29:21 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|Принять выгрузку из ЦО (v8)|Получить с FTP выгрузку из ЦО #2|Выполняется действие|
+Jan 26 20:36:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|Принять выгрузку из ЦО (v8)|(null)|Выполняется задача|
+Jan 26 20:36:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|Принять выгрузку из ЦО (v8)|Получить текущую дату|Выполняется действие|
+Jan 26 20:36:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|Принять выгрузку из ЦО (v8)|Вопрос #3|Выполняется действие|
+Feb 1 18:21:08 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Проблема при подключении к FTP|System.Net.Sockets.SocketException (0x80004005): Запрошенное имя верно, но данные запрошенного типа не найдены#015#012 в System.Net.Dns.InternalGetHostByName(String hostName, Boolean includeIPv6)#015#012 в System.Net.Dns.Resolve(String hostName)#015#012 в EnterpriseDT.Net.HostNameResolver.GetAddress(String hostName)#015#012 в EnterpriseDT.Net.Ftp.FTPClient.Connect()#015#012 в DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Feb 1 18:21:24 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.When|executor|(null)|(null)|При получении данных с сервера произошла ошибка|System.Net.WebException: Невозможно разрешить удаленное имя: 'mattino.mattino.ru'#015#012 в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)#015#012 в System.Net.WebClient.DownloadData(Uri address)#015#012 в System.Net.WebClient.DownloadData(String address)#015#012 в DataExchanger.DigestWebClient.DownloadData(String address) в C:\Project\dataexchanger\DataExchanger\DigestDownload\DigestWebClient.cs:строка 32#015#012 в DataExchanger.When.OnWhenTimer(Object state)#015
+Feb 1 18:21:36 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.When|executor|(null)|(null)|При получении данных с сервера произошла ошибка|System.Net.WebException: Невозможно разрешить удаленное имя: 'mattino.mattino.ru'#015#012 в System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)#015#012 в System.Net.WebClient.DownloadData(Uri address)#015#012 в System.Net.WebClient.DownloadData(String address)#015#012 в DataExchanger.DigestWebClient.DownloadData(String address) в C:\Project\dataexchanger\DataExchanger\DigestDownload\DigestWebClient.cs:строка 32#015#012 в DataExchanger.When.OnWhenTimer(Object state)#015
+Feb 1 18:21:37 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Подключение к FTP...|
+Feb 1 18:30:14 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor||Сообщить на сайт о выполнении задачи "Загрузить фотографии обуви"|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}}}|
+Feb 1 18:32:14 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor||Сообщить на сайт о выполнении задачи "Загрузить фотографии обуви"|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}}}|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Загрузка файла на FTP...|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Разрыв соединения с FTP...|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Завершение загрузки с FTP...|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|Подключение к FTP-серверу|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|Аутентификация|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|Смена директории на /executor/sells|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|Переименование файла|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Подключение к FTP...|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Заход на FTP...|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Смена директории на '/executor/sells/' ...|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Выполнение операции SIZE '/executor/sells/' ...|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Не возможно выяснить размер файла /executor/sells///executor/sells/sl2012020115522615000000032.dbf. Возможно файла нет или доступ к файлу запрещен настройками FTP-сервера.|EnterpriseDT.Net.Ftp.FTPException: /executor/sells/sl2012020115522615000000032.dbf: No such file or directory (code=550)#015#012 в EnterpriseDT.Net.Ftp.FTPControlSocket.ValidateReply(FTPReply reply, String expectedReplyCode)#015#012 в EnterpriseDT.Net.Ftp.FTPClient.Size(String remoteFile)#015#012 в DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|Разрыв соединения с FTP...|
+Feb 1 18:42:14 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}}}|
+Feb 1 18:47:04 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|Принять выгрузку из ЦО (v8)|(null)|Выполняется задача|
+Feb 1 18:47:04 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|Принять выгрузку из ЦО (v8)|Получить текущую дату|Выполняется действие|

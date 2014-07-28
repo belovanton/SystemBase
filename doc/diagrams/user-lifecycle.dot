@@ -1,0 +1,5 @@
+digraph user_lifecycle {
+	rankdir = "LR";
+	sync -> create [headlabe="С атрибутом external=false"];
+	registration -> create [headlabel="С атрибутом external=true",labelangle=-51,labeldistance=12];
+}

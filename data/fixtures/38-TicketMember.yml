@@ -1,0 +1,79 @@
+TicketMember:
+  -
+    User: initiator
+    Ticket: open
+    role: initiator
+  -
+    User: initiator
+    Ticket: openroot
+    role: initiator
+  -
+    User: initiator
+    Ticket: urgent
+    role: initiator
+  -
+    User: initiator
+    Ticket: resolved
+    role: initiator
+  -
+    User: initiator
+    Ticket: closed
+    role: initiator
+<?php
+for ($i = 1; $i <= 42; $i++) {
+  echo '
+  -
+    User: initiator
+    Ticket: pagetest'.$i.'
+    role: initiator';
+}
+?>
+
+  -
+    User: manager
+    Ticket: urgent
+    role: manager
+  -
+    User: manager
+    Ticket: resolved
+    role: manager
+  -
+    User: manager
+    Ticket: closed
+    role: manager
+  -
+    User: initiator
+    Ticket: subticket_created
+    role: initiator
+  -
+    User: initiator
+    Ticket: subticket_resolved
+    role: initiator
+  -
+    User: initiator
+    Ticket: subsubticket_created
+    role: initiator
+  -
+    User: initiator
+    Ticket: in_a_subtopic
+    role: initiator
+  -
+    User:		initiator
+    Ticket:	infotell_ticket
+    role:		initiator
+  -
+    User:       initiator
+    Ticket:     extra-ticket-fields-test-ticket
+    role:       initiator
+  -
+    User:       initiator
+    Ticket:     extra-field-test-1
+    role:       initiator
+  -
+    User:       initiator
+    Ticket:     extra-field-test-2
+    role:       initiator
+  -
+    User:       initiator
+    Ticket:     distributor-test-ticket
+    role:       initiator

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<params>
+  <param name="1cbase_path">d:\_db_1s\torg.semenovskaya.base\</param>
+  <param name="PCFilename">Message_CO_M11.zip</param>
+  <param name="1c_base">ИП Гукасян ОСМ "Семеновская" для сервера, основная</param>
+  <param name="CPFilename">Message_M11_CO.zip</param>
+  <param name="1cprog_path">C:\Program Files (x86)\1cv81\bin\1cv8.exe</param>  
+</params>

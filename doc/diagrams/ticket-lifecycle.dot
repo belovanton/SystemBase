@@ -1,0 +1,6 @@
+digraph G {
+	rankdir = "LR";
+	edge [label="hi",color="red"]
+	create -> resolve -> close;
+	create -> something -> close [label="str"];
+}

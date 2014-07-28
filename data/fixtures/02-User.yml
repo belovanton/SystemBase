@@ -1,0 +1,160 @@
+User:
+  admin:
+    display_name:	"Администратор"
+    username:		admin@mattino.ru
+    password:		asdf
+    jabber:			kolashtov@gmail.com
+    locality:		"Москва"
+    ldap:			0
+    uid:			a132123
+    active:		1
+    Groups:			[super-users, own-organization-users, system-option-administrators]
+  initiator:
+    display_name:	"Инициатор заявок"
+    username:		initiator@mattino.ru
+    password:		asdf
+    jabber:			kolashtov@gmail.com
+    locality:		"Москва"
+    ldap:                       1
+    uid:			a132123
+    active:		1
+    Groups:			[public-organization-users]
+  executor:
+    display_name:	"Исполнитель заявок"
+    username:		executor@mattino.ru
+    password:		asdf
+    jabber:			kolashtov@gmail.com
+    locality:		"Москва"
+    ldap:                       1
+    uid:			a132123
+    active:		1
+    Groups:			[private-organization-users]
+  executor_second:
+    display_name:	"Дополнительный исполнитель"
+    username:		executor_second@mattino.ru
+    password:		asdf
+    ldap:                       1
+    uid:			a132123
+    active:		1
+    jabber:			kolashtov@gmail.com
+    locality:			"Москва"
+  manager:
+    display_name:	"Менеджер заявок"
+    username:		manager@mattino.ru
+    password:		asdf
+    jabber:			kolashtov@gmail.com
+    locality:		"Москва"
+    ldap:                       1
+    uid:			a132123
+    active:		1
+    Groups:			[cost-auditor]
+  double_manager:
+    display_name:	"Двойной менеджер заявок"
+    username:		double_manager@mattino.ru
+    password:		asdf
+    jabber:			kolashtov@gmail.com
+    locality:		"Москва"
+    ldap:                       1
+    uid:			a132123
+    active:		1
+    Groups:			[cost-auditor]
+  triple_manager:
+    display_name:	"Тройной менеджер заявок"
+    username:		triple_manager@mattino.ru
+    password:		asdf
+    jabber:			kolashtov@gmail.com
+    locality:		"Москва"
+    ldap:                       1
+    uid:			a132123
+    active:		1
+    Groups:			[cost-auditor]
+  third:
+    display_name:	"Третье лицо (не исполнитель, не инициатор)"
+    username:		third@mattino.ru
+    password:		asdf
+    jabber:			kolashtov@gmail.com
+    locality:		"Москва"
+    ldap:                       1
+    uid:			a132123
+    active:		1
+  third_admin:
+    display_name:	"Третье лицо с высокими привилегиями"
+    username:		third_admin@mattino.ru
+    password:		asdf
+    jabber:			kolashtov@gmail.com
+    locality:		"Москва"
+    ldap:                       1
+    uid:			a132123
+    active:		1
+    Groups:			[super-users]
+  external:
+    display_name:	"Внешний пользователь"
+    username:		external@mattino.ru
+    password:		asdf
+    locality:		"Москва"
+    active:		1
+  inactive:
+    display_name:	"Неактивный инициатор заявок"
+    username:		inactive@mattino.ru
+    password:		asdf
+    jabber:			kolashtov@gmail.com
+    locality:		"Москва"
+    ldap:                       1
+    uid:			a132123
+    active:         false
+  mag-mattino-test:
+    display_name:	"Аккаунт магазина"
+    username:		mag-mattino-test@mattino.ru
+    password:		asdf
+    jabber:			mag-mattino-test@mattino.ru
+    locality:		"Москва"
+    ldap:                       1
+    uid:			a132123
+    active:		1
+    
+  feedback_executor:
+    display_name:	"Исполнитель жалоб"
+    username:		feedback-executor@mattino.ru
+    password:		asdf
+    jabber:			feedback-executor@mattino.ru
+    locality:		"Москва"
+    ldap:                       1
+    uid:			a132123
+    active:		1
+    address: Адрес исполнителя жалоб
+  feedback_executor2:
+    display_name:	"Второй исполнитель жалоб"
+    username:		feedback-executor2@mattino.ru
+    password:		asdf
+    jabber:			feedback-executor2@mattino.ru
+    locality:		"Москва"
+    ldap:                       1
+    uid:			a132123
+    active:		1
+    address: Адрес второго исполнителя жалоб
+  responsible:
+    display_name:	"Ответственный за смс рассылку"
+    username:		responsible@mattino.ru
+    password:		asdf
+    mobile: 123456789
+    jabber:			responsible@gmail.com
+  visitors_shop_user:
+    display_name:	"Владелец посещаемого магазина"
+    username:		visitors@mattino.ru
+    password:		asdf
+    jabber:			asdf@gmail.com
+    locality:		"Москва"
+    ldap:			0
+    uid:			a132123
+    active:		1
+    Groups:			[super-users, own-organization-users, system-option-administrators]
+  renamed:
+    display_name:	"Для переименования"
+    username:		renamed@mattino.ru
+    password:		asdf
+    jabber:			renamed@gmail.com
+    locality:		"Москва"
+    ldap:			1
+    uid:			a132123
+    active:		1
+    mobile:     74956775908

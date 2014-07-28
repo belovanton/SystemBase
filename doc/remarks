@@ -1,0 +1,195 @@
+Всем:
+ * schema:
+  * Поставьте на все поля своих моделей Data Validation (http://www.doctrine-project.org/projects/orm/1.2/docs/manual/data-validation/pl#introduction)
+  * notnull: true — по умолчанию.
+ * action:
+  * processForm — возвращает объект или false
+  * processPlainForm — вызывает processForm и перенаправляет
+  * processAjaxForm — вызывает processForm и возвращает результат вызова ->success() или ->failure() с ошибками
+
+Ко:
+ * User.class.php :: Используй hooks, а не save()
+ * schema:
+  * User:
+   * mobile реально string?
+   * Сгруппирой поля по-нормальному.
+  * Group:
+   * Зачем description?
+
+Саша:
++ * action:
++  * ticketActions
++   * validateIndex — странная проверка getUser()->getId()
++   * getExecutorRecord — в action'ах не должно быть подобных запросов. Это метод модели.
++   * super_can_index? - Просмотр списка заявок определенного пользователя.
++   * getDefaultModel -> prepareAutoObject
++   * $this->commentary_form->setDefault('ticket_id', $request->getParameter('id')); — нужно прописывать это в URL, мы же валидировать добавления комментария будем по заявке.
++   * self::getDefaultModel();
++   * executeChangeTopic
++    * $this->form = new TicketChangeTopicForm($object); — а откуда объект получается?
++     * executeSetParent
++     * executeRemoveParent
++     * executeChangeExecutor
++     * ... // needs global find-replace
++    * setTemplate('edit')?
+    * Вообще, это аяксовый метод. return $this->success();
++  * topicActions
++   * prepareEdit — все может быть проще.
+ * TopicTable
++  * cleanRootID
++   * $shiftNeeded не нужен, достаточно UPDATE'а ----> Несоглашусь. При его отсутствии будут производиться бесполезные сдвиги.
+   * Может, лучше сделать это через getTree()->getBaseQuery()?
+ * *Guard
+  * Вызовы hasCredential должны быть раньше, чем isOwner, isMember?
+ * TicketFileGuard
++  * Неужели он реально работает? // isMember ~ $this->roles ~ getTicket
++ * Список зависимостей в ticket/show
++ * Удаление staff-a возможно только если на нем нет открытых заявок.
++ * Сортировка тем 0-ого уровня по root_id
++ * Использовать методы GenerateAutoObjectAndForm()
++ * Добавить создание дочерней заявки
+ * Отдача файлов безопасным способом
+Валент:
+ * На некоторых шаблонах Eclipse отображает warning'и, а на одном — даже error.
+ * В некоторых шаблонах полезли отступы.
+ * Используй партиалы авторизации.
+ * Используй партиал формы.
+ * Используй партиалы партиалы партиалы.
+  * Скажи «нет» повторениям.
+ * Если у тебя больше нет задач, то можно поучиться программированию:
+  * Замени жесткие URL'ы на генерируемые с помощью url_for.
+   * - вместе веселее -
+  * http://mattino.web.trueoffice.org/issues/80
+   * - вместе веселее -
+  * Сделай партиалы ссылок.
+ * Формулируй чёткие действия. В частности, используй ограниченный набор фраз:
+  * «Кликнуть на ссылку ...».
+  * «Нажать на кнопку ...»
+  * «Отправить форму ...»
+
+
+Себе:
+ * Таблица заявок:
+  * Показывать IF(displayName, username)
+  * Добавить ссылку на username.
+ * Сделать Валенту дополнительный класс x-field-icon
++ * Сделай выборки в дереве тем отсортированных по root_id.
+
+Проверка тестов:
+ * Алгоритм:
+  * Пройтись по тестам, оценивая действительность и оформление каждого.
+  * Пройтись по тестам еще раз, добавляя новые случаи.
+ * Тест каждого действия состоит из тестов этого действия под всеми типами пользователей, под которыми система выдает различные результаты.
+  * Минимальное количество тестов одного действия равно количеству групп.
+
+Тесты:
+
+Flags:
+ * FIX -- Fix it. This shit isn't working.
+ * TODO -- Just do it! Not even implemented.
+ * FAIL -- Test failed. Try it yourself.
+ * FIXTURE -- We need moar cool fixturez!!!11
+
+TOPIC:
+ * Методы:
+  * Поместить тему сразу после указанной.
+  * Сделать тему первым потомком указанной темы.
+  * (D) Существует важное состояние темы: Является ли она корневой?
+        В зависимости от этого - алгоритм перемещения варьируется. Необходимо рассмотреть 4 ситуации:
+        - Перемещаемая тема является/не является корневой;
+        - Тема, от которой мы отталкиваемся является/не является корневой.
+
+ * Commentary
+  * FIX.
+ * Files
+  * FIX.
+ * Profile.
+  * TODO.
+ * Tabs
+  * Add
+   * TODO.
+  * Edit
+   * TODO.
+  * Functioning
+   * http://mask/tests/tab/area/functioning#be8d33232bf49c3892bde88bec1cf552 -- TODO
+   * http://mask/tests/tab/area/functioning#b52b54072dd6efc8698baf0275bc0f7d -- FIX
+   * http://mask/tests/tab/area/functioning#805cca71ec9751cc14ba2956b41e7b55 -- FIX
+   * http://mask/tests/tab/area/functioning#1fea69300672a8f155733dd146de0d40 -- FIX
+   * http://mask/tests/tab/area/functioning#35e061aad3830286310fb975d6515076 -- FIX
+   * http://mask/tests/tab/area/functioning#e12343042e71c32949802d98c918f7f9 -- FIX
+ * Ticket
+  * Create
+   * TODO
+  * Edit
+   +* http://mask/tests/ticket/area/edit#af86dcef665ba758cf9dc728350395b1 -- FAIL
+   +* http://mask/tests/ticket/area/edit#888b6a876b4c00d898d2c9b2afeea8ef -- FAIL
+  * Solution
+   * TODO
+  * Tree
+   * FIX
+  * View
+   * http://mask/tests/ticket/area/view#09472be507fbe09236b35715bf170779 -- FAIL
+   * http://mask/tests/ticket/area/view#d3ec64fe01d5aea38b45080f0ac21a7e -- FAIL
+   * http://mask/tests/ticket/area/view#3bca1d63c5f2a064bd726ce5d6a045fe -- TODO
+   * http://mask/tests/ticket/area/view#8fecbcaf11a05eadc41622fb73b26c60 -- TODO
+   * http://mask/tests/ticket/area/view#4bbc55f5767d2abe8258e4e5b917eac4 -- TODO
+   * http://mask/tests/ticket/area/view#e2e187310aa1d55366879569bd0913e4 -- TODO
+ * Topic
+  * Create
+   * FIX
+  * CreateSub
+   * FIX // Подтемы не создаются. Создаются корневые темы.
+  * Edit
+   * FIX // См. CreateSub
+   * http://mask/tests/topic/area/edit#49ab1db77630886413b881c4b4b2191f -- FAIL
+  * staffAdd
+   * PASS!
+  * staffEdit
+   * PASS!
+  * staffDelete
+   * http://mask/tests/topic/area/staffDelete#452dc556efa74af23416cbaa6517f745 -- FAIL
+   * http://mask/tests/topic/area/staffDelete#b3084eb35c5b8fe8f2d95348e98853c0 -- FAIL
+ * User
+  * Authorization
+   * http://mask/tests/user/area/authorization#362200431d5b339877e2fac183514ce7 -- FAIL // 4 Required? WTF?
+   * http://mask/tests/user/area/authorization#bf2fa97c398971ea3e1cf41fa908d913 -- FAIL
+   * http://mask/tests/user/area/authorization#fd2152af26927bd8798f1402dd54f14e -- FAIL
+   * http://mask/tests/user/area/authorization#6ee08a688da40f5f896d9b1f7df624b5 -- FAIL
+   * http://mask/tests/user/area/authorization#c61ba132f2f6e67b295c10b7d24f64b3 -- FAIL
+  other: FIX 
+
+Тесты (2):
+ * Commentary
+  * Add
+   +* http://mask/dev.php/tests/commentary/area/create#bcca5a4c1c06d9dfa8861ce713e2bc5e -- FAIL
+   +* http://mask/dev.php/tests/commentary/area/create#5b08669c9f283eaf4021281b04ec2ced -- FAIL
+   +* http://mask/dev.php/tests/commentary/area/create#5b08669c9f283eaf4021281b04ec2ced -- FAIL
+   <Было решено выводить одно обобщенное сообщение об ошибке.>
+ * Files
+  * Add
+   +* http://mask/dev.php/tests/files/area/add#e72ce346bd9640cf03cb5733b17b7a33 -- FAIL // Ошибка выводится в отдельном шаблоне
+   +* http://mask/dev.php/tests/files/area/add#c34fc7f7a9a2cc25ef10c190f6508eb7 -- FAIL // Ошибка выводится в отдельном шаблоне
+   +* http://mask/dev.php/tests/files/area/add#a597662e25937df35d35898c4d9f8303 -- FAIL
+  * Delete
+   +* http://mask/dev.php/tests/files/area/delete#41c6648c8eb6bb8ae4a154fbd53a09dc -- FAIL
+   +* http://mask/dev.php/tests/files/area/delete#efc1014638d07a90335276b1bc484b48 -- FAIL
+  * Edit
+   +* http://mask/dev.php/tests/files/area/edit#4749b749069e8fd657111aa6fb662118 -- FAIL
+   +* http://mask/dev.php/tests/files/area/edit#238361bb4fffa08d6749239767648f8a -- FAIL // Ошибка выводится в отдельном шаблоне
+   +* http://mask/dev.php/tests/files/area/edit#00348d2cfb7a968760ab7a7960eaa4e3 -- FAIL // Ошибка выводится в отдельном шаблоне
+   +* http://mask/dev.php/tests/files/area/edit#8d0ae487df78e355b0f5ba3fd7edd675 -- FAIL
+  * Tabs
+   * TODO
+  * Ticket
+   * Create
+    * TODO
+   * Edit
+    * PASS
+   * Solution
+    * TODO
+   * Sub
+    * Kinda PASS. But I still hate the fact that you are changing the system over and over.
+   * Tree
+    * TODO
+   * View
+    * 

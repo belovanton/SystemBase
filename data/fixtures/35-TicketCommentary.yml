@@ -1,0 +1,14 @@
+TicketCommentary:
+  -
+    Ticket:	 			urgent
+    User:				admin
+    text:
+      text:				"Сделаем."
+  -
+    Ticket:	 			open
+    User:				admin
+    text:
+      text:				"Можно, теоретически..."
+      completed:
+        value:			false
+    

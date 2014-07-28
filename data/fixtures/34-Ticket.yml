@@ -1,0 +1,124 @@
+Ticket:
+  NestedSet:		true
+  extra-field-test-1:
+    Topic:              test
+    short_description:  'Тест полей 1'
+    text:               'Тест полей 1'
+    date_start:         '2007-07-14'
+    date_end:           '2008-07-14'
+    execution_time:     '10'
+    status:             created
+    Branch:             nuclear
+    importance:         'high'
+  extra-field-test-2:
+    Topic:              test
+    short_description:  'Тест полей 2'
+    text:               'Тест полей 2'
+    date_start:         '2007-08-14'
+    date_end:           '2008-08-14'
+    execution_time:     '30'
+    status:             created
+    Branch:             ghostmasters
+    importance:         'normal'
+  open:
+    Topic: 				test
+    text: 				"Это новая заявка."
+    short_description:	"Краткое описание новой заявки."
+    status: 			created
+    children:
+  openroot:
+    Topic: 				test
+    text: 				"Это новая заявка."
+    short_description:	"Краткое описание новой заявки."
+    status: 			created
+    children:
+      subticket_created:
+        Topic: 				test
+        text: 				"Новая подзаявка к новой заявке."
+        short_description:	"Краткое описание новой подзаявки к новой заявке."
+        status: 			created
+        children:
+          subsubticket_created:
+            Topic: 				test
+            text: 				"Новая подзаявка 2 уровня к новой заявке."
+            short_description:	"Краткое описание новой подзаявки 2 уровня к новой заявке."
+            status: 			created
+      subticket_resolved:
+        Topic: 				test
+        text: 				"Выполненная подзаявка к новой заявке."
+        short_description:	"Краткое описание выполненной подзаявки."
+        status: 			resolved
+  urgent:
+    Topic: 				test2
+    text: |
+      Это срочная заявка.
+      Поддерживается следующее форматирование:
+      <ul>
+      	<li>Списки</li>
+      	<li><strong>Полужирный шрифт</strong></li>
+      	<li><i>Курсив</i></li>
+      </ul>
+    short_description:  "Краткое описание срочной заявки." 
+    importance: 			high
+    status: 			created
+  resolved:
+    Topic: 				test
+    text: 				"Это выполненная заявка."
+    short_description:	"Краткое описание выполненной заявки."
+    status: 			resolved
+  closed:
+    Topic: 				test
+    text: 				"Это закрытая заявка."
+    short_description:	"Краткое описание закрытой заявки."
+    status: 			closed
+    updated_at:	"<?php echo date('Y-m-d H:i:s', strtotime('+1 hour')) ?>"
+  in_a_subtopic:
+    Topic:				testroot5
+    text:				"Это заявка в подтеме третьего уровня."
+    short_description:	"Краткое описание заявки в подтеме третьего уровня."
+  infotell_ticket:
+    Topic:				infotell
+    text:				"Заявка от оператора колл-центра."
+    short_description:	"Краткое описание заявки от оператора колл-центра."
+
+<?php
+for ($i = 1; $i <= 42; $i++) {
+  $imp =  rand(1,3);
+  $imp = ($imp==1?'high':($imp==2?'low':'normal'));
+  $date_begin = sprintf("'20%02d-%02d-%02d'", $i/5 ,rand(1,12), rand(1,28));
+  $date_end = sprintf("'20%02d-%02d-%02d'", $i/5+1 ,rand(1,12), rand(1,28));
+  echo '
+  pagetest'.$i.':
+    Topic: 				test
+    text: 				"Эта заявка проверяет работу постраничного просмора."
+    short_description:	"Описание заявки, проверяющей работу постраничного просмотра"
+    importance: 	     '.$imp.'
+    date_start:         '.$date_begin.'
+    date_end:           '.$date_end.'
+    execution_time:     '.($i%4*30).'
+    status: 			created
+    Branch:          nuclear';
+}
+?>
+
+  extra-ticket-fields-test-ticket:
+    Topic:              test
+    text:               'Эта заявка для теста дополнительных полей заявки'
+    short_description:  'Заявка для теста дополнительных полей'
+    date_start:         '2000-07-14'
+    date_end:           '2014-11-04'
+    Branch:             nuclear
+    importance:         'high'
+    execution_time:     '30'
+    status:             created
+  distributor-test-ticket:
+    Topic:              topic_with_distributor
+    text:               'Эта заяака для теста распределителя'
+    short_description:  'Заявка для теста распределителя'
+    date_start:         '2000-07-14'
+    date_end:           '2014-11-04'
+    Branch:             nuclear
+    importance:         'high'
+    execution_time:     '30'
+    status:             created
+    

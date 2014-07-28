@@ -1,0 +1,151 @@
+Jan 17 17:28:07 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|������� �������� �� �� (v8)|��������� #3|����������� ��������|
+Jan 17 18:15:57 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor||�������� �� ���� � ���������� ������ "������� �������� �� �� (v8)"|����������� � FTP...|
+Jan 17 18:15:57 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor||�������� �� ���� � ���������� ������ "������� �������� �� �� (v8)"|����� �� FTP...|
+Jan 17 18:15:57 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor||�������� �� ���� � ���������� ������ "������� �������� �� �� (v8)"|����� ���������� �� '/executor/sells/' ...|
+Jan 17 18:21:55 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 18:40:55 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 19:07:55 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 19:11:56 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 19:18:55 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 19:21:55 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 19:22:55 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 19:26:59 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����������� � FTP...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� �� FTP...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� ���������� �� '/executor/sells/' ...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� SIZE '/executor/sells/' ...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|�� �������� �������� ������ ����� /executor/sells///executor/sells/sl2012011720505415000000109.dbf. �������� ����� ��� ��� ������ � ����� �������� ����������� FTP-�������.|EnterpriseDT.Net.Ftp.FTPException: /executor/sells/sl2012011720505415000000109.dbf: No such file or directory (code=550)#015#012 � EnterpriseDT.Net.Ftp.FTPControlSocket.ValidateReply(FTPReply reply, String expectedReplyCode)#015#012 � EnterpriseDT.Net.Ftp.FTPClient.Size(String remoteFile)#015#012 � DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|������ ���������� � FTP...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|������ ����� �� ��� �������.|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� ��������� ������� �����...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |1c_upload:dTSzV43@mattino.mattino.ru: 0||
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |END||
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize0|1c_upload:dTSzV43@www2.mattino.ru|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����������� � FTP...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� �� FTP...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� ���������� �� '/executor/sells/' ...|
+Jan 17 20:55:59 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� SIZE '/executor/sells/' ...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|-------------------------------------------------|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����������� � FTP...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|--------------- ��������� �������� --------------|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|-------------------------------------------------|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� �� FTP...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� ���������� �� '/executor/sells/' ...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� SIZE '/executor/sells/' ...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|�� �������� �������� ������ ����� /executor/sells///executor/sells/sl2012012613110115000000001.dbf. �������� ����� ��� ��� ������ � ����� �������� ����������� FTP-�������.|EnterpriseDT.Net.Ftp.FTPException: /executor/sells/sl2012012613110115000000001.dbf: No such file or directory (code=550)#015#012 � EnterpriseDT.Net.Ftp.FTPControlSocket.ValidateReply(FTPReply reply, String expectedReplyCode)#015#012 � EnterpriseDT.Net.Ftp.FTPClient.Size(String remoteFile)#015#012 � DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|������ ���������� � FTP...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|������ ����� �� ��� �������.|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� ��������� ������� �����...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |1c_upload:dTSzV43@mattino.mattino.ru: 0||
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |END||
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize0|1c_upload:dTSzV43@www2.mattino.ru|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����������� � FTP...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� �� FTP...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� ���������� �� '/executor/sells/' ...|
+Jan 26 15:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� SIZE '/executor/sells/' ...|
+Jan 26 15:29:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|������� �������� �� �� (v8)|�������������: � ����� ����� ������� "_" #2|����������� ��������|
+Jan 26 15:29:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|������� �������� �� �� (v8)|�������� �� FTP � �� #2|����������� ��������|
+Jan 26 16:10:03 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 16:18:02 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 16:35:02 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 16:50:02 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 17:06:02 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 17:14:36 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|������� �������� �� �� (v8)|��������� #3|����������� ��������|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����������� � FTP...|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� �� FTP...|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� ���������� �� '/executor/sells/' ...|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� SIZE '/executor/sells/' ...|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|�� �������� �������� ������ ����� /executor/sells///executor/sells/sl2012012616030415000000025.dbf. �������� ����� ��� ��� ������ � ����� �������� ����������� FTP-�������.|EnterpriseDT.Net.Ftp.FTPException: /executor/sells/sl2012012616030415000000025.dbf: No such file or directory (code=550)#015#012 � EnterpriseDT.Net.Ftp.FTPControlSocket.ValidateReply(FTPReply reply, String expectedReplyCode)#015#012 � EnterpriseDT.Net.Ftp.FTPClient.Size(String remoteFile)#015#012 � DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|������ ���������� � FTP...|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|������ ����� �� ��� �������.|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� ��������� ������� �����...|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |1c_upload:dTSzV43@mattino.mattino.ru: 0||
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |END||
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize0|1c_upload:dTSzV43@www2.mattino.ru|
+Jan 26 17:17:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����������� � FTP...|
+Jan 26 17:18:03 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 18:24:04 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor||�������� �� ���� � ���������� ������ "������� �������� �� �� (v8)"|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 18:25:13 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|������� �������� �� �� (v8)|�������������: � ����� ����� ������� "_" #2|����������� ��������|
+Jan 26 18:25:13 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|������� �������� �� �� (v8)|�������� �� FTP � �� #2|����������� ��������|
+Jan 26 18:25:13 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|������� �������� �� �� (v8)|������������� ���� �� FTP|����������� ��������|
+Jan 26 18:25:13 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|������� �������� �� �� (v8)|�������� �� ���� � ���������� ������ "������� �������� �� �� (v8)"|����������� ��������|
+Jan 26 18:25:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|������� �������� �� �� (v8)|�������� �� ���� � ���������� ������ "������� �������� �� �� (v8)"|��������� ���������� ������|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|��������������|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|����� ���������� �� /executor/sells|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|�������������� �����|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����������� � FTP...|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� �� FTP...|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� ���������� �� '/executor/sells/' ...|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� SIZE '/executor/sells/' ...|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|�� �������� �������� ������ ����� /executor/sells///executor/sells/sl2012012617340115000000046.dbf. �������� ����� ��� ��� ������ � ����� �������� ����������� FTP-�������.|EnterpriseDT.Net.Ftp.FTPException: /executor/sells/sl2012012617340115000000046.dbf: No such file or directory (code=550)#015#012 � EnterpriseDT.Net.Ftp.FTPControlSocket.ValidateReply(FTPReply reply, String expectedReplyCode)#015#012 � EnterpriseDT.Net.Ftp.FTPClient.Size(String remoteFile)#015#012 � DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|������ ���������� � FTP...|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|������ ����� �� ��� �������.|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� ��������� ������� �����...|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |1c_upload:dTSzV43@mattino.mattino.ru: 0||
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |END||
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize0|1c_upload:dTSzV43@www2.mattino.ru|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����������� � FTP...|
+Jan 26 18:40:31 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� �� FTP...|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����������� � FTP...|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� �� FTP...|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� ���������� �� '/executor/sells/' ...|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� SIZE '/executor/sells/' ...|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|�� �������� �������� ������ ����� /executor/sells///executor/sells/sl2012012617405815000000047.dbf. �������� ����� ��� ��� ������ � ����� �������� ����������� FTP-�������.|EnterpriseDT.Net.Ftp.FTPException: /executor/sells/sl2012012617405815000000047.dbf: No such file or directory (code=550)#015#012 � EnterpriseDT.Net.Ftp.FTPControlSocket.ValidateReply(FTPReply reply, String expectedReplyCode)#015#012 � EnterpriseDT.Net.Ftp.FTPClient.Size(String remoteFile)#015#012 � DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|������ ���������� � FTP...|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|������ ����� �� ��� �������.|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� ��������� ������� �����...|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |1c_upload:dTSzV43@mattino.mattino.ru: 0||
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize |END||
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize0|1c_upload:dTSzV43@www2.mattino.ru|
+Jan 26 18:55:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����������� � FTP...|
+Jan 26 19:10:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����������� � FTP...|
+Jan 26 19:10:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� �� FTP...|
+Jan 26 19:10:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� ���������� �� '/executor/sells/' ...|
+Jan 26 19:10:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� SIZE '/executor/sells/' ...|
+Jan 26 19:16:30 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� SIZE '/executor/sells/' ...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|�� �������� �������� ������ ����� /executor/sells///executor/sells/sl2012012618161215000000053.dbf. �������� ����� ��� ��� ������ � ����� �������� ����������� FTP-�������.|EnterpriseDT.Net.Ftp.FTPException: /executor/sells/sl2012012618161215000000053.dbf: No such file or directory (code=550)#015#012 � EnterpriseDT.Net.Ftp.FTPControlSocket.ValidateReply(FTPReply reply, String expectedReplyCode)#015#012 � EnterpriseDT.Net.Ftp.FTPClient.Size(String remoteFile)#015#012 � DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|������ ���������� � FTP...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|������ ����� �� ��� �������.|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� ��������� ������� �����...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize0|1c_upload:dTSzV43@www2.mattino.ru: 0||
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|(null)|(null)|ftpFileSize.FileSize0 |END||
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����������� � FTP...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� �� FTP...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� ���������� �� '/executor/sells/' ...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|�������� ����� �� FTP...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|������ ���������� � FTP...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� � FTP...|
+Jan 26 19:25:30 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|����������� � FTP-�������|
+Jan 26 19:25:30 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 19:32:30 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{{{}}, {{}}, {{}}}}, {{}}, {{}}, {{}}, {{}}}}|
+Jan 26 20:25:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����������� � FTP...|
+Jan 26 20:25:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� �� FTP...|
+Jan 26 20:25:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� ���������� �� '/executor/sells/' ...|
+Jan 26 20:25:29 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� SIZE '/executor/sells/' ...|
+Jan 26 20:29:21 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|������� �������� �� �� (v8)|�������� � FTP �������� �� �� #2|����������� ��������|
+Jan 26 20:36:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|������� �������� �� �� (v8)|(null)|����������� ������|
+Jan 26 20:36:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|������� �������� �� �� (v8)|�������� ������� ����|����������� ��������|
+Jan 26 20:36:01 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|������� �������� �� �� (v8)|������ #3|����������� ��������|
+Feb 1 18:21:08 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|�������� ��� ����������� � FTP|System.Net.Sockets.SocketException (0x80004005): ����������� ��� �����, �� ������ ������������ ���� �� �������#015#012 � System.Net.Dns.InternalGetHostByName(String hostName, Boolean includeIPv6)#015#012 � System.Net.Dns.Resolve(String hostName)#015#012 � EnterpriseDT.Net.HostNameResolver.GetAddress(String hostName)#015#012 � EnterpriseDT.Net.Ftp.FTPClient.Connect()#015#012 � DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Feb 1 18:21:24 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.When|executor|(null)|(null)|��� ��������� ������ � ������� ��������� ������|System.Net.WebException: ���������� ��������� ��������� ���: 'mattino.mattino.ru'#015#012 � System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)#015#012 � System.Net.WebClient.DownloadData(Uri address)#015#012 � System.Net.WebClient.DownloadData(String address)#015#012 � DataExchanger.DigestWebClient.DownloadData(String address) � C:\Project\dataexchanger\DataExchanger\DigestDownload\DigestWebClient.cs:������ 32#015#012 � DataExchanger.When.OnWhenTimer(Object state)#015
+Feb 1 18:21:36 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.When|executor|(null)|(null)|��� ��������� ������ � ������� ��������� ������|System.Net.WebException: ���������� ��������� ��������� ���: 'mattino.mattino.ru'#015#012 � System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)#015#012 � System.Net.WebClient.DownloadData(Uri address)#015#012 � System.Net.WebClient.DownloadData(String address)#015#012 � DataExchanger.DigestWebClient.DownloadData(String address) � C:\Project\dataexchanger\DataExchanger\DigestDownload\DigestWebClient.cs:������ 32#015#012 � DataExchanger.When.OnWhenTimer(Object state)#015
+Feb 1 18:21:37 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����������� � FTP...|
+Feb 1 18:30:14 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor||�������� �� ���� � ���������� ������ "��������� ���������� �����"|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}}}|
+Feb 1 18:32:14 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor||�������� �� ���� � ���������� ������ "��������� ���������� �����"|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}}}|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|�������� ����� �� FTP...|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|������ ���������� � FTP...|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� � FTP...|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|����������� � FTP-�������|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|��������������|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|����� ���������� �� /executor/sells|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.RenameFtpFile|executor|(null)|(null)|�������������� �����|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����������� � FTP...|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� �� FTP...|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|����� ���������� �� '/executor/sells/' ...|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|���������� �������� SIZE '/executor/sells/' ...|
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|�� �������� �������� ������ ����� /executor/sells///executor/sells/sl2012020115522615000000032.dbf. �������� ����� ��� ��� ������ � ����� �������� ����������� FTP-�������.|EnterpriseDT.Net.Ftp.FTPException: /executor/sells/sl2012020115522615000000032.dbf: No such file or directory (code=550)#015#012 � EnterpriseDT.Net.Ftp.FTPControlSocket.ValidateReply(FTPReply reply, String expectedReplyCode)#015#012 � EnterpriseDT.Net.Ftp.FTPClient.Size(String remoteFile)#015#012 � DataExchanger.FTPFileSize.GetSize(Boolean beQuiet)#015
+Feb 1 18:36:14 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger.FileUploader|executor|(null)|(null)|������ ���������� � FTP...|
+Feb 1 18:42:14 80.255.16.178 MyApp[WARN][server]: |WARN |DataExchanger|executor|(null)|(null)|{{}, {{{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}, {{}}}}|
+Feb 1 18:47:04 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|������� �������� �� �� (v8)|(null)|����������� ������|
+Feb 1 18:47:04 80.255.16.178 MyApp[INFO][server]: |INFO |DataExchanger|executor|������� �������� �� �� (v8)|�������� ������� ����|����������� ��������|

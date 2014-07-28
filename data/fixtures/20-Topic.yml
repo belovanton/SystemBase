@@ -1,0 +1,70 @@
+Topic:
+  NestedSet:		true
+  testroot:
+    name: Корневая тестовая тема
+    help: Подсказка к корневой теме
+    can_links_equipments: true
+    children:
+      testroot2:
+        name: Тестовая подтема 2
+      testroot3:
+        name: Тестовая подтема 3
+      testroot4:
+        name: Тестовая подтема 4
+        children:
+          testroot5:
+            name: Тестовая подподтема 5
+            help: Подсказка к тестовой подтеме 5
+  test:
+    name: Тестовая тема
+    help: |
+      Подсказка к тестовой теме. Пожалуй, можно сделать эту подсказку по-настоящему огромной, для того, чтобы проверить как будет вести себя поле при столь большом количестве текста.
+      Поддерживается следующее форматирование:
+      <ul>
+      	<li>Списки</li>
+      	<li><strong>Полужирный шрифт</strong></li>
+      	<li><i>Курсив</i></li>
+      </ul>
+    children: []
+  test2:
+    name: Другая тестовая тема
+    children: []
+  test3:
+    name: Тестовая тема без основного исполнителя
+    children: []
+  test4:
+    name: Тестовая тема с executor@mattino.ru в качестве основного исполнителя и без второго
+    children: []
+  test5:
+    name: Тестовая тема с executor@mattino.ru в качестве второго исполнителя и без основного
+    children: []
+  test6:
+    name: Тестовая тема с executor@mattino.ru в качестве основного исполнителя и с secondary_executor@mattino.ru в качестве второго
+    children: []
+  test7:
+    name: "Скрытая тема"
+    children: []
+    is_active: false
+  infotell:
+    name:	"Инфотелл"
+    internal_id:	"44"
+    children:
+      infotell_child:
+        name:	"Подтема Инфотелла"
+        children:	[]
+      infotell_complaint:
+        name:	"Жалоба Инфотелла"
+        internal_id:	"46"
+        children:	[]
+      infotell_wishes:
+        name:	"Пожелания"
+        children:	[]
+      infotell_employment_questions:
+        name:	"Предложения по трудоустройству"
+        children:	[]
+  no_category:
+    name: "Без категории"
+    internal_id: "69"
+  topic_with_distributor:
+    name: "Тема с распределителем"
+    children:   []

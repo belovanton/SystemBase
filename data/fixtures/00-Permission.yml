@@ -1,0 +1,1323 @@
+Permission:
+# заявки
+  foreign_auth:
+    subsystem: "заявки"
+    name: "foreign_auth"
+    text: "Может пользоваться авторизующей ссылкой"
+  can_access_admin_panel:
+    subsystem: "заявки"
+    name: "can_access_admin_panel"
+    text: "Может пользоваться панелью управления"
+  can_transfer_user_items:
+    subsystem: "пользователь"
+    name: "can_transfer_user_items"
+    text: "Может перебрость все отношения(связи с заявками, членство в группах и другое), связанные с одним пользователем, на другого."
+  super_can_get_report:
+    subsystem: "заявки"
+    name: "super_can_get_report"
+    text: "Может получать отчеты"
+  super_can_index:
+    subsystem: "заявки"
+    name: "super_can_index"
+    text: "[Все заявки] Может смотреть список заявок"
+  super_can_show:
+    subsystem: "заявки"
+    name: "super_can_show"
+    text: "[Все заявки] Может смотреть заявку"
+  super_can_modify_content:
+    subsystem: "заявки"
+    name: "super_can_modify_content"
+    text: "[Все заявки] Может изменять содержимое заявки"
+  super_can_change_urgent:
+    subsystem: "заявки"
+    name: "super_can_change_urgent"
+    text: "[Все заявки] Может устанавливать срочность заявки"
+  super_can_change_topic:
+    subsystem: "заявки"
+    name: "super_can_change_topic"
+    text: "[Все заявки] Может изменять тему заявки"
+  super_can_change_executor:
+    subsystem: "заявки"
+    name: "super_can_change_executor"
+    text: "[Все заявки] Может изменять исполнителя заявки"
+  super_can_change_parent:
+    subsystem: "заявки"
+    name: "super_can_change_parent"
+    text: "[Все заявки] Может изменять родительскую заявку"
+  super_can_create_dependency:
+    subsystem: "заявки"
+    name: "super_can_create_dependency"
+    text: "[Все заявки] Может добавлять зависимость"
+  super_can_add_commentary:
+    subsystem: "заявки"
+    name: "super_can_add_commentary"
+    text: "[Все заявки] Может добавлять комментарий к заявке"
+  super_can_create_file:
+    subsystem: "заявки"
+    name: "super_can_create_file"
+    text: "[Все заявки] Может добавлять файл"
+  super_can_edit_file:
+    subsystem: "заявки"
+    name: "super_can_edit_file"
+    text: "[Все заявки] Может изменять файл"
+  super_can_delete_file:
+    subsystem: "заявки"
+    name: "super_can_delete_file"
+    text: "[Все заявки] Может удалять файл"
+  super_can_get_file:
+    subsystem: "заявки"
+    name: "super_can_get_file"
+    text: "[Все заявки] Может скачивать файл"
+  super_can_complete:
+    subsystem: "заявки"
+    name: "super_can_complete"
+    text: "[Все заявки] Может ставить статус «Выполнена»"
+  super_can_close:
+    subsystem: "заявки"
+    name: "super_can_close"
+    text: "[Все заявки] Может ставить статус «Закрыта»"
+  super_can_open:
+    subsystem: "заявки"
+    name: "super_can_open"
+    text: "[Все заявки] Может открывать закрытые заявки"
+  can_create_ticket:
+    subsystem: "заявки"
+    name: "can_create_ticket"
+    text: "Может добавлять заявку"
+  can_modify_content:
+    subsystem: "заявки"
+    name: "can_modify_content"
+    text: "Может изменять содержимое заявки"
+  can_change_topic:
+    subsystem: "заявки"
+    name: "can_change_topic"
+    text: "Может изменять тему заявки"
+  can_change_executor:
+    subsystem: "заявки"
+    name: "can_change_executor"
+    text: "Может изменять исполнителя заявки"
+  can_set_parent:
+    subsystem: "заявки"
+    name: "can_set_parent"
+    text: "Может изменять родительскую заявку"
+  can_create_dependency:
+    subsystem: "заявки"
+    name: "can_create_dependency"
+    text: "Может добавлять зависимость"
+  can_add_commentary:
+    subsystem: "заявки"
+    name: "can_add_commentary"
+    text: "Может добавлять комментарий к заявке"
+  can_create_file:
+    subsystem: "заявки"
+    name: "can_create_file"
+    text: "Может добавлять файл"
+  can_edit_file:
+    subsystem: "заявки"
+    name: "can_edit_file"
+    text: "Может изменять файл"
+  can_delete_file:
+    subsystem: "заявки"
+    name: "can_delete_file"
+    text: "Может удалять файл"
+  can_load_topic_tree:
+    subsystem: "заявки"
+    name: "can_load_topic_tree"
+    text: "Может пользоваться деревом тем"
+  can_load_topic_tree_with_inactive:
+    subsystem: "заявки"
+    name: "can_load_topic_tree_with_inactive"
+    text: "Может пользоваться деревом тем с неактивными темами"
+  can_index_topic:
+    subsystem: "заявки"
+    name: "can_index_topic"
+    text: "Может управлять деревом тем"
+  can_extend_staffs:
+    subsystem: "заявки"
+    name: "can_extend_staffs"
+    text: "Может переносить роли в дочерние темы"
+  can_show_topic:
+    subsystem: "заявки"
+    name: "can_show_topic"
+    text: "Может смотреть тему"
+  can_create_topic:
+    subsystem: "заявки"
+    name: "can_create_topic"
+    text: "Может добавлять тему"
+  can_edit_topic:
+    subsystem: "заявки"
+    name: "can_edit_topic"
+    text: "Может изменять тему"
+  can_delete_topic:
+    subsystem: "заявки"
+    name: "can_delete_topic"
+    text: "Может удалять тему"
+  can_create_topic_staff:
+    subsystem: "заявки"
+    name: "can_create_topic_staff"
+    text: "Может добавлять роль темы"
+  can_edit_topic_staff:
+    subsystem: "заявки"
+    name: "can_edit_topic_staff"
+    text: "Может изменять роль темы"
+  can_delete_topic_staff:
+    subsystem: "заявки"
+    name: "can_delete_topic_staff"
+    text: "Может удалять роль темы"
+  can_transfer_topic_staff:
+    subsystem: "заявки"
+    name: "can_transfer_topic_staff"
+    text: "Может передавать заявки из роли темы"
+  can_create_infotell:
+    subsystem: "заявки"
+    name: "can_create_infotell"
+    text: "Может создавать заявки типа Инфотелл"
+# реквизиты
+  can_manage_requisites:
+    subsystem: "реквизиты"
+    name: "can_manage_requisites"
+    text: "Может управлять реквизитами"
+  can_show_organization_own:
+    subsystem: "реквизиты"
+    name: "can_show_organization_own"
+    text: "Может смотреть организации типа «Своя»"
+  can_create_organization_own:
+    subsystem: "реквизиты"
+    name: "can_create_organization_own"
+    text: "Может создавать организации типа «Своя»"
+  can_edit_organization_own:
+    subsystem: "реквизиты"
+    name: "can_edit_organization_own"
+    text: "Может изменять организации типа «Своя»"
+  can_delete_organization_own:
+    subsystem: "реквизиты"
+    name: "can_delete_organization_own"
+    text: "Может удалять организации типа «Своя»"
+  can_show_organization_private:
+    subsystem: "реквизиты"
+    name: "can_show_organization_private"
+    text: "Может смотреть организации типа «Приватная»"
+  can_create_organization_private:
+    subsystem: "реквизиты"
+    name: "can_create_organization_private"
+    text: "Может создавать организации типа «Приватная»"
+  can_edit_organization_private:
+    subsystem: "реквизиты"
+    name: "can_edit_organization_private"
+    text: "Может изменять организации типа «Приватная»"
+  can_delete_organization_private:
+    subsystem: "реквизиты"
+    name: "can_delete_organization_private"
+    text: "Может удалять организации типа «Приватная»"
+  can_show_organization_public:
+    subsystem: "реквизиты"
+    name: "can_show_organization_public"
+    text: "Может смотреть организации типа «Публичная»"
+  can_create_organization_public:
+    subsystem: "реквизиты"
+    name: "can_create_organization_public"
+    text: "Может создавать организации типа «Публичная»"
+  can_edit_organization_public:
+    subsystem: "реквизиты"
+    name: "can_edit_organization_public"
+    text: "Может изменять организации типа «Публичная»"
+  can_delete_organization_public:
+    subsystem: "реквизиты"
+    name: "can_delete_organization_public"
+    text: "Может удалять организации типа «Публичная»"
+  can_show_organization_category:
+    subsystem: "реквизиты"
+    name: "can_show_organization_category"
+    text: "Может просматривать категории организаций"
+  can_create_organization_category:
+    subsystem: "реквизиты"
+    name: "can_create_organization_category"
+    text: "Может создавать категории организаций"
+  can_edit_organization_category:
+    subsystem: "реквизиты"
+    name: "can_edit_organization_category"
+    text: "Может редактировать категории организаций"
+  can_delete_organization_category:
+    subsystem: "реквизиты"
+    name: "can_delete_organization_category"
+    text: "Может удалять категории организаций"
+  can_show_own_organizations_and_linked_branches_requisites:
+    subsystem: "реквизиты"
+    name: "can_show_own_organizations_and_linked_branches_requisites"
+    text: "Может смотреть реквизиты своих организаций и связанных филиалов"
+  can_show_all_requisites:
+    subsystem: "реквизиты"
+    name: "can_show_all_requisites"
+    text: "Может смотреть все реквизиты"
+# системные настройки
+  can_index_group:
+    subsystem: "системные настройки"
+    name: "can_index_group"
+    text: "Может смотреть список групп пользователей"
+  can_show_group:
+    subsystem: "системные настройки"
+    name: "can_show_group"
+    text: "Может смотреть группы пользователей"
+  can_create_group:
+    subsystem: "системные настройки"
+    name: "can_create_group"
+    text: "Может создавать группы пользователей"
+  can_edit_group:
+    subsystem: "системные настройки"
+    name: "can_edit_group"
+    text: "Может изменять группы пользователей"
+  can_delete_group:
+    subsystem: "системные настройки"
+    name: "can_delete_group"
+    text: "Может удалять группы пользователей"
+  can_load_group_tree:
+    subsystem: "системные настройки"
+    name: "can_load_group_tree"
+    text: "Может загружать дерево групп пользователей"
+  can_show_config_files:
+    subsystem: "системные настройки"
+    name: "can_show_config_files"
+    text: "Может смотреть конфигурационные файлы"
+  can_edit_config_files:
+    subsystem: "системные настройки"
+    name: "can_edit_config_files"
+    text: "Может редактировать конфигурационные файлы"
+  can_show_templates:
+    subsystem: "системные настройки"
+    name: "can_show_templates"
+    text: "Может смотреть шаблоны"
+  can_edit_templates:
+    subsystem: "системные настройки"
+    name: "can_edit_templates"
+    text: "Может редактировать шаблоны"
+  can_observe_machines:
+    subsystem: "системные настройки"
+    name: "can_observe_machines"
+    text: "Может следить за машинами"
+  can_index_menu:
+    subsystem: "системные настройки"
+    name: "can_index_menu"
+    text: "Может управлять деревом меню"
+  can_show_menu:
+    subsystem: "системные настройки"
+    name: "can_show_menu"
+    text: "Может смотреть пункт меню"
+  can_create_menu:
+    subsystem: "системные настройки"
+    name: "can_create_menu"
+    text: "Может добавлять пункт меню"
+  can_edit_menu:
+    subsystem: "системные настройки"
+    name: "can_edit_menu"
+    text: "Может изменять пункт меню"
+  can_delete_menu:
+    subsystem: "системные настройки"
+    name: "can_delete_menu"
+    text: "Может удалять пункт меню"
+# распоряжения
+  can_create_order:
+    subsystem: "распоряжения"
+    name: "can_create_order"
+    text: "Может создавать распоряжения"
+  can_show_order:
+    subsystem: "распоряжения"
+    name: "can_show_order"
+    text: "Может просматривать распоряжение"
+  can_add_text_order:
+    subsystem: "распоряжения"
+    name: "can_add_text_order"
+    text: "Может дополнять содержание распоряжения"
+  can_cancel_order:
+    subsystem: "распоряжения"
+    name: "can_cancel_order"
+    text: "Может отменять распоряжение"
+  can_delete_order:
+    subsystem: "распоряжения"
+    name: "can_delete_order"
+    text: "Может удалять распоряжение"
+  can_stat_order:
+    subsystem: "распоряжения"
+    name: "can_stat_order"
+    text: "Может просматривать статистику распоряжения"
+  can_edit_order:
+    subsystem: "распоряжения"
+    name: "can_edit_order"
+    text: "Может редактировать распоряжение"
+  can_create_file_order:
+    subsystem: "распоряжения"
+    name: "can_create_file_order"
+    text: "Может добавлять файлы к распоряжению"
+  can_edit_file_order:
+    subsystem: "распоряжения"
+    name: "can_edit_file_order"
+    text: "Может редактировать файлы распоряжения"
+  can_delete_file_order:
+    subsystem: "распоряжения"
+    name: "can_delete_file_order"
+    text: "Может удалять файлы распоряжения"
+# super credentials.
+  can_show_any_order:
+    subsystem: "распоряжения"
+    name: "can_show_any_order"
+    text: "Может просматривать любые распоряжения"
+  can_add_text_any_order:
+    subsystem: "распоряжения"
+    name: "can_add_text_any_order"
+    text: "Может дополнять содержание любого распоряжения"
+  can_cancel_any_order:
+    subsystem: "распоряжения"
+    name: "can_cancel_any_order"
+    text: "Может отменять любые распоряжения"
+  can_delete_any_order:
+    subsystem: "распоряжения"
+    name: "can_delete_any_order"
+    text: "Может удалять любые распоряжения"
+  can_stat_any_order:
+    subsystem: "распоряжения"
+    name: "can_stat_any_order"
+    text: "Может просматривать статистику любых распоряжений"
+  can_edit_any_order:
+    subsystem: "распоряжения"
+    name: "can_edit_any_order"
+    text: "Может редактировать любые распоряжения"
+#  can_edit_executors_order:
+#    subsystem: "распоряжения"
+#    name: "can_edit_executors_order"
+#    text: "Может изменять ответственных за распоряжение"
+# Branch system
+  can_have_access_to_ms_br_branch:
+    subsystem: "филиалы"
+    name: "can_have_access_to_ms_br_branch"
+    text: "Имеет доступ к любому филиалу"
+  can_edit_access_list_to_ms_br_branch:
+    subsystem: "филиалы"
+    name: "can_edit_access_list_to_ms_br_branch"
+    text: "Может изменять доступ пользователей к филиалу"
+# Branch system -> Branch
+  can_index_branches:
+    subsystem: "филиалы"
+    name: "can_index_branches"
+    text: "Может просматривать список филиалов"
+  can_create_branch:
+    subsystem: "филиалы"
+    name: "can_create_branch"
+    text: "Может создавать филиалы"
+  can_show_branch:
+    subsystem: "филиалы"
+    name: "can_show_branch"
+    text: "Может просматривать информацию о филиале"
+  can_edit_branch:
+    subsystem: "филиалы"
+    name: "can_edit_branch"
+    text: "Может редактировать информацию о филиале"
+  can_delete_branch:
+    subsystem: "филиалы"
+    name: "can_delete_branch"
+    text: "Может удалять филиалы"
+  can_show_branch_technical_comments:
+    subsystem: "филиалы"
+    name: "can_show_branch_technical_comments"
+    text: "Может просматривать технические примечания"
+  can_edit_branch_technical_comments:
+    subsystem: "филиалы"
+    name: "can_edit_branch_technical_comments"
+    text: "Может редактировать технические примечания"
+  can_show_branch_public_technical_comments:
+    subsystem: "филиалы"
+    name: "can_show_branch_public_technical_comments"
+    text: "Может просматривать публичные технические примечания"
+  can_edit_branch_public_technical_comments:
+    subsystem: "филиалы"
+    name: "can_edit_branch_public_technical_comments"
+    text: "Может редактировать публичные технические примечания"
+# Branch system -> Equipment
+  can_index_branch_equipment:
+    subsystem: "филиалы"
+    name: "can_index_branch_equipment"
+    text: "Может просматривать список оборудования"
+  can_create_branch_equipment:
+    subsystem: "филиалы"
+    name: "can_create_branch_equipment"
+    text: "Может создавать новое оборудование"
+  can_show_branch_equipment:
+    subsystem: "филиалы"
+    name: "can_show_branch_equipment"
+    text: "Может просматривать информацию об оборудовании"
+  can_edit_branch_equipment:
+    subsystem: "филиалы"
+    name: "can_edit_branch_equipment"
+    text: "Может редактировать информацию об оборудовании"
+  can_transmit_branch_equipment:
+    subsystem: "филиалы"
+    name: "can_transmit_branch_equipment"
+    text: "Может передавать оборудование"
+  can_delete_branch_equipment:
+    subsystem: "филиалы"
+    name: "can_delete_branch_equipment"
+    text: "Может удалять оборудование"
+# Branch system -> Category
+  can_index_branch_categories:
+    subsystem: "филиалы"
+    name: "can_index_branch_categories"
+    text: "Может просматривать список категорий оборудования"
+  can_create_branch_category:
+    subsystem: "филиалы"
+    name: "can_create_branch_category"
+    text: "Может создавать новые категории оборудования"
+  can_edit_branch_category:
+    subsystem: "филиалы"
+    name: "can_edit_branch_category"
+    text: "Может редактировать информацию о категориях оборудования"
+  can_delete_branch_category:
+    subsystem: "филиалы"
+    name: "can_delete_branch_category"
+    text: "Может удалять категории оборудования"
+# Branch system -> City
+  can_create_city:
+    subsystem: "филиалы"
+    name: "can_create_city"
+    text: "Может создавать города"
+  can_show_city:
+    subsystem: "филиалы"
+    name: "can_show_city"
+    text: "Может просматривать города"
+  can_index_city:
+    subsystem: "филиалы"
+    name: "can_index_city"
+    text: "Может просматривать список городов"
+  can_edit_city:
+    subsystem: "филиалы"
+    name: "can_edit_city"
+    text: "Может редактировать города"
+  can_delete_city:
+    subsystem: "филиалы"
+    name: "can_delete_city"
+    text: "Может удалять города"
+
+# пользователи
+  can_change_any_password:
+    subsystem: "пользователи"
+    name: "can_change_any_password"
+    text: "Может менять пароли любых пользователей"
+  can_edit_own_profile:
+    subsystem: "пользователи"
+    name: "can_edit_own_profile"
+    text: "Может редактировать свои данные"
+  can_edit_own_password:
+    subsystem: "пользователи"
+    name: "can_edit_own_password"
+    text: "Может редактировать свой пароль"
+  can_edit_own_mobile:
+    subsystem: "пользователи"
+    name: "can_edit_own_mobile"
+    text: "Может редактировать свой номер мобильного"
+  can_edit_any_mobile:
+    subsystem: "пользователи"
+    name: "can_edit_any_mobile"
+    text: "Может редактировать мобильный телефон любых пользователей"
+  can_edit_non_ldap_users:
+    subsystem: "пользователи"
+    name: "can_edit_non_ldap_users"
+    text: "Может редактировать внешних пользователей"
+  can_edit_ldap_users:
+    subsystem: "пользователи"
+    name: "can_edit_ldap_users"
+    text: "Может редактировать внутренних пользователей"
+  can_delete_users_from_ldap:
+    subsystem: "пользователи"
+    name: "can_delete_users_from_ldap"
+    text: "Может удалять пользователей из LDAP"
+  can_insert_user_into_ldap:
+    subsystem: "пользователи"
+    name: "can_insert_user_into_ldap"
+    text: "Может добавлять пользователей в LDAP"
+  can_edit_users_activity:
+    subsystem: "пользователи"
+    name: "can_edit_users_activity"
+    text: "Может управлять активностью пользователей"
+  can_index_users:
+    subsystem: "пользователи"
+    name: "can_index_users"
+    text: "Может просматривать список пользователей"
+  can_filter_users:
+    subsystem: "пользователи"
+    name: "can_filter_users"
+    text: "Может фильтровать список пользователей"
+  can_delele_non_ldap_user:
+    subsystem: "пользователи"
+    name: can_delele_non_ldap_user
+    text: "Может удалять пользователей не из LDAP"
+  can_change_notify:
+    subsystem: "пользователи"
+    name: "can_change_notify"
+    text: "Может выключать уведомления"
+  can_add_users:
+    subsystem: "пользователи"
+    name: "can_add_users"
+    text: "Может добавлять пользователей"
+# Автообмен
+  can_index_ms_dx_tasks:
+    subsystem: "Автообмен"
+    name: "can_index_ms_dx_tasks"
+    text: "Может просматривать список задач Автообмена"
+  can_show_ms_dx_task:
+    subsystem: "Автообмен"
+    name: "can_show_ms_dx_task"
+    text: "Может смотреть задачу Автообмена"
+  can_create_ms_dx_task:
+    subsystem: "Автообмен"
+    name: "can_create_ms_dx_task"
+    text: "Может создавать задачу Автообмена"
+  can_edit_ms_dx_task:
+    subsystem: "Автообмен"
+    name: "can_edit_ms_dx_task"
+    text: "Может редактировать задачу Автообмена"
+  can_delete_ms_dx_task:
+    subsystem: "Автообмен"
+    name: "can_delete_ms_dx_task"
+    text: "Может удалять задачу Автообмена"
+  can_index_ms_dx_actions:
+    subsystem: "Автообмен"
+    name: "can_index_ms_dx_actions"
+    text: "Может просматривать список действий Автообмена"
+  can_show_ms_dx_action:
+    subsystem: "Автообмен"
+    name: "can_show_ms_dx_action"
+    text: "Может смотреть действие Автообмена"
+  can_create_ms_dx_action:
+    subsystem: "Автообмен"
+    name: "can_create_ms_dx_action"
+    text: "Может создавать действие Автообмена"
+  can_edit_ms_dx_action:
+    subsystem: "Автообмен"
+    name: "can_edit_ms_dx_action"
+    text: "Может редактировать действие Автообмена"
+  can_delete_ms_dx_action:
+    subsystem: "Автообмен"
+    name: "can_delete_ms_dx_action"
+    text: "Может удалять действие Автообмена"
+  can_index_ms_dx_plans:
+    subsystem: "Автообмен"
+    name: "can_index_ms_dx_plans"
+    text: "Может просматривать список планов выполнения Автообмена"
+  can_show_ms_dx_plan:
+    subsystem: "Автообмен"
+    name: "can_show_ms_dx_plan"
+    text: "Может смотреть план выполнения Автообмена"
+  can_create_ms_dx_plan:
+    subsystem: "Автообмен"
+    name: "can_create_ms_dx_plan"
+    text: "Может создавать план выполнения Автообмена"
+  can_edit_ms_dx_plan:
+    subsystem: "Автообмен"
+    name: "can_edit_ms_dx_plan"
+    text: "Может редактировать план выполнения Автообмена"
+  can_delete_ms_dx_plan:
+    subsystem: "Автообмен"
+    name: "can_delete_ms_dx_plan"
+    text: "Может удалять план выполнения Автообмена"
+  can_index_dx_status:
+    subsystem: "Автообмен"
+    name: "can_index_dx_status"
+    text: "Может смотреть cтатус Автообмена для филиалов"
+  can_index_ms_dx_task_requests:
+    subsystem: "Автообмен"
+    name: "can_index_ms_dx_task_requests"
+    text: "Может смотреть список запросов на запуск задач Автообмена"
+  can_create_ms_dx_task_request:
+    subsystem: "Автообмен"
+    name: "can_create_ms_dx_task_request"
+    text: "Может создавать запросы на запуск задач Автообмена"
+
+#банк
+ #артикул
+  can_create_bn_article:
+    subsystem: "банк"
+    name: "can_create_bn_article"
+    text: "Может создавать экземпляр сущности [артикул]"
+  can_show_bn_article:
+    subsystem: "банк"
+    name: "can_show_bn_article"
+    text: "Может просматривать экземпляр сущности [артикул]"
+  can_index_bn_articles:
+    subsystem: "банк"
+    name: "can_index_bn_articles"
+    text: "Может просматривать список экземпляров сущности [артикул]"
+  can_edit_bn_article:
+    subsystem: "банк"
+    name: "can_edit_bn_article"
+    text: "Может редактировать экземпляр сущности [артикул]"
+  can_delete_bn_article:
+    subsystem: "банк"
+    name: "can_delete_bn_article"
+    text: "Может удалять экземпляр сущности [артикул]"
+  can_balance_bn_article:
+    subsystem: "банк"
+    name: "can_balance_bn_article"
+    text: "Может просматривать остаток товара в филиалах"
+
+
+ #марка
+  can_create_bn_mark:
+    subsystem: "банк"
+    name: "can_create_bn_mark"
+    text: "Может создавать экземпляр сущности [марка]"
+  can_show_bn_mark:
+    subsystem: "банк"
+    name: "can_show_bn_mark"
+    text: "Может просматривать экземпляр сущности [марка]"
+  can_index_bn_marks:
+    subsystem: "банк"
+    name: "can_index_bn_marks"
+    text: "Может просматривать список экземпляров сущности [марка]"
+  can_edit_bn_mark:
+    subsystem: "банк"
+    name: "can_edit_bn_mark"
+    text: "Может редактировать экземпляр сущности [марка]"
+  can_delete_bn_mark:
+    subsystem: "банк"
+    name: "can_delete_bn_mark"
+    text: "Может удалять экземпляр сущности [марка]"
+
+ #категория
+  can_create_bn_category:
+    subsystem: "банк"
+    name: "can_create_bn_category"
+    text: "Может создавать экземпляр сущности [категория]"
+  can_show_bn_category:
+    subsystem: "банк"
+    name: "can_show_bn_category"
+    text: "Может просматривать экземпляр сущности [категория]"
+  can_index_bn_categorys:
+    subsystem: "банк"
+    name: "can_index_bn_categorys"
+    text: "Может просматривать список экземпляров сущности [категория]"
+  can_edit_bn_category:
+    subsystem: "банк"
+    name: "can_edit_bn_category"
+    text: "Может редактировать экземпляр сущности [категория]"
+  can_delete_bn_category:
+    subsystem: "банк"
+    name: "can_delete_bn_category"
+    text: "Может удалять экземпляр сущности [категория]"
+  can_category_objects_transmit:
+    subsystem: "банк"
+    name: "can_category_objects_transmit"
+    text: "Может передавать объекты от одной категории к другой"
+
+ #категория интернет-магазина
+  can_create_bn_shop_category:
+    subsystem: "банк"
+    name: "can_create_bn_shop_category"
+    text: "Может создавать экземпляр сущности [категория интернет-магазина]"
+  can_show_bn_shop_category:
+    subsystem: "банк"
+    name: "can_show_bn_shop_category"
+    text: "Может просматривать экземпляр сущности [категория интернет-магазина]"
+  can_edit_bn_shop_category:
+    subsystem: "банк"
+    name: "can_edit_bn_shop_category"
+    text: "Может редактировать экземпляр сущности [категория интернет-магазина]"
+  can_delete_bn_shop_category:
+    subsystem: "банк"
+    name: "can_delete_bn_shop_category"
+    text: "Может удалять экземпляр сущности [категория интернет-магазина]"
+  can_category_bn_shop_category:
+    subsystem: "банк"
+    name: "can_category_bn_shop_category"
+    text: "Может установки связи между категориями каталога и экземплярами сущности [категория интернет-магазина]"
+
+ #материал
+  can_create_bn_material:
+    subsystem: "банк"
+    name: "can_create_bn_material"
+    text: "Может создавать экземпляр сущности [материал]"
+  can_show_bn_material:
+    subsystem: "банк"
+    name: "can_show_bn_material"
+    text: "Может просматривать экземпляр сущности [материал]"
+  can_index_bn_materials:
+    subsystem: "банк"
+    name: "can_index_bn_materials"
+    text: "Может просматривать список экземпляров сущности [материал]"
+  can_edit_bn_material:
+    subsystem: "банк"
+    name: "can_edit_bn_material"
+    text: "Может редактировать экземпляр сущности [материал]"
+  can_delete_bn_material:
+    subsystem: "банк"
+    name: "can_delete_bn_material"
+    text: "Может удалять экземпляр сущности [материал]"
+
+ #товар
+  can_create_bn_product:
+    subsystem: "банк"
+    name: "can_create_bn_product"
+    text: "Может создавать экземпляр сущности [товар]"
+  can_show_bn_product:
+    subsystem: "банк"
+    name: "can_show_bn_product"
+    text: "Может просматривать экземпляр сущности [товар]"
+  can_index_bn_products:
+    subsystem: "банк"
+    name: "can_index_bn_products"
+    text: "Может просматривать список экземпляров сущности [товар]"
+  can_edit_bn_product:
+    subsystem: "банк"
+    name: "can_edit_bn_product"
+    text: "Может редактировать экземпляр сущности [товар]"
+  can_delete_bn_product:
+    subsystem: "банк"
+    name: "can_delete_bn_product"
+    text: "Может удалять экземпляр сущности [товар]"
+
+ #цвет
+  can_create_bn_color:
+    subsystem: "банк"
+    name: "can_create_bn_color"
+    text: "Может создавать экземпляр сущности [цвет]"
+  can_show_bn_color:
+    subsystem: "банк"
+    name: "can_show_bn_color"
+    text: "Может просматривать экземпляр сущности [цвет]"
+  can_index_bn_colors:
+    subsystem: "банк"
+    name: "can_index_bn_colors"
+    text: "Может просматривать список экземпляров сущности [цвет]"
+  can_edit_bn_color:
+    subsystem: "банк"
+    name: "can_edit_bn_color"
+    text: "Может редактировать экземпляр сущности [цвет]"
+  can_delete_bn_color:
+    subsystem: "банк"
+    name: "can_delete_bn_color"
+    text: "Может удалять экземпляр сущности [цвет]"
+
+ #группа цветов
+  can_create_bn_color_group:
+    subsystem: "банк"
+    name: "can_create_bn_color_group"
+    text: "Может создавать экземпляр сущности [группа цветов]"
+  can_show_bn_color_group:
+    subsystem: "банк"
+    name: "can_show_bn_color_group"
+    text: "Может просматривать экземпляр сущности [группа цветов]"
+  can_index_bn_color_groups:
+    subsystem: "банк"
+    name: "can_index_bn_color_groups"
+    text: "Может просматривать список экземпляров сущности [группа цветов]"
+  can_edit_bn_color_group:
+    subsystem: "банк"
+    name: "can_edit_bn_color_group"
+    text: "Может редактировать экземпляр сущности [группа цветов]"
+  can_delete_bn_color_group:
+    subsystem: "банк"
+    name: "can_delete_bn_color_group"
+    text: "Может удалять экземпляр сущности [группа цветов]"
+
+ #штрихкод
+  can_create_bn_bar_code:
+    subsystem: "банк"
+    name: "can_create_bn_bar_code"
+    text: "Может создавать экземпляр сущности [штрихкод]"
+  can_show_bn_bar_code:
+    subsystem: "банк"
+    name: "can_show_bn_bar_code"
+    text: "Может просматривать экземпляр сущности [штрихкод]"
+  can_index_bn_bar_codes:
+    subsystem: "банк"
+    name: "can_index_bn_bar_codes"
+    text: "Может просматривать список экземпляров сущности [штрихкод]"
+  can_edit_bn_bar_code:
+    subsystem: "банк"
+    name: "can_edit_bn_bar_code"
+    text: "Может редактировать экземпляр сущности [штрихкод]"
+  can_delete_bn_bar_code:
+    subsystem: "банк"
+    name: "can_delete_bn_bar_code"
+    text: "Может удалять экземпляр сущности [штрихкод]"
+
+ #информация о продаже
+  can_create_bn_sale_info:
+    subsystem: "банк"
+    name: "can_create_bn_sale_info"
+    text: "Может создавать экземпляр сущности [информация о продаже]"
+  can_show_bn_sale_info:
+    subsystem: "банк"
+    name: "can_show_bn_sale_info"
+    text: "Может просматривать экземпляр сущности [информация о продаже]"
+  can_index_bn_sale_infos:
+    subsystem: "банк"
+    name: "can_index_bn_sale_infos"
+    text: "Может просматривать список экземпляров сущности [информация о продаже]"
+  can_edit_bn_sale_info:
+    subsystem: "банк"
+    name: "can_edit_bn_sale_info"
+    text: "Может редактировать экземпляр сущности [информация о продаже]"
+  can_delete_bn_sale_info:
+    subsystem: "банк"
+    name: "can_delete_bn_sale_info"
+    text: "Может удалять экземпляр сущности [информация о продаже]"
+
+#отчет по дисконтной карте
+  can_show_discount_card_report:
+    subsystem: "банк"
+    name: "can_show_discount_card_report"
+    text: "Может смотреть отчет по дисконтным картам"
+
+ #владелец дисконтной карты
+  can_create_bn_discount_card_owner:
+    subsystem: "банк"
+    name: "can_create_bn_discount_card_owner"
+    text: "Может создавать экземпляр сущности [владелец дисконтной карты]"
+  can_show_bn_discount_card_owner:
+    subsystem: "банк"
+    name: "can_show_bn_discount_card_owner"
+    text: "Может просматривать экземпляр сущности [владелец дисконтной карты]"
+  can_index_bn_discount_card_owners:
+    subsystem: "банк"
+    name: "can_index_bn_discount_card_owners"
+    text: "Может просматривать список экземпляров сущности [владелец дисконтной карты]"
+  can_edit_bn_discount_card_owner:
+    subsystem: "банк"
+    name: "can_edit_bn_discount_card_owner"
+    text: "Может редактировать экземпляр сущности [владелец дисконтной карты]"
+  can_delete_bn_discount_card_owner:
+    subsystem: "банк"
+    name: "can_delete_bn_discount_card_owner"
+    text: "Может удалять экземпляр сущности [владелец дисконтной карты]"
+
+ #сертификат
+  can_create_bn_warrant:
+    subsystem: "банк"
+    name: "can_create_bn_warrant"
+    text: "Может создавать экземпляр сущности [сертификат]"
+  can_show_bn_warrant:
+    subsystem: "банк"
+    name: "can_show_bn_warrant"
+    text: "Может просматривать экземпляр сущности [сертификат]"
+  can_index_bn_warrants:
+    subsystem: "банк"
+    name: "can_index_bn_warrants"
+    text: "Может просматривать список экземпляров сущности [сертификат]"
+  can_edit_bn_warrant:
+    subsystem: "банк"
+    name: "can_edit_bn_warrant"
+    text: "Может редактировать экземпляр сущности [сертификат]"
+  can_delete_bn_warrant:
+    subsystem: "банк"
+    name: "can_delete_bn_warrant"
+    text: "Может удалять экземпляр сущности [сертификат]"
+
+ #изображение
+  can_create_bn_image:
+    subsystem: "банк"
+    name: "can_create_bn_image"
+    text: "Может создавать экземпляр сущности [изображение]"
+  can_show_bn_image:
+    subsystem: "банк"
+    name: "can_show_bn_image"
+    text: "Может просматривать экземпляр сущности [изображение]"
+  can_index_bn_images:
+    subsystem: "банк"
+    name: "can_index_bn_images"
+    text: "Может просматривать список экземпляров сущности [изображение]"
+  can_edit_bn_image:
+    subsystem: "банк"
+    name: "can_edit_bn_image"
+    text: "Может редактировать экземпляр сущности [изображение]"
+  can_delete_bn_image:
+    subsystem: "банк"
+    name: "can_delete_bn_image"
+    text: "Может удалять экземпляр сущности [изображение]"
+
+ #изображение картиинки
+  can_create_bn_article_image:
+    subsystem: "банк"
+    name: "can_create_bn_article_image"
+    text: "Может создавать экземпляр сущности [изображение картиинки]"
+  can_show_bn_article_image:
+    subsystem: "банк"
+    name: "can_show_bn_article_image"
+    text: "Может просматривать экземпляр сущности [изображение картиинки]"
+  can_index_bn_article_images:
+    subsystem: "банк"
+    name: "can_index_bn_article_images"
+    text: "Может просматривать список экземпляров сущности [изображение картиинки]"
+  can_edit_bn_article_image:
+    subsystem: "банк"
+    name: "can_edit_bn_article_image"
+    text: "Может редактировать экземпляр сущности [изображение картиинки]"
+  can_delete_bn_article_image:
+    subsystem: "банк"
+    name: "can_delete_bn_article_image"
+    text: "Может удалять экземпляр сущности [изображение картиинки]"
+
+ #изображение сертификата
+  can_create_bn_warrant_image:
+    subsystem: "банк"
+    name: "can_create_bn_warrant_image"
+    text: "Может создавать экземпляр сущности [изображение сертификата]"
+  can_show_bn_warrant_image:
+    subsystem: "банк"
+    name: "can_show_bn_warrant_image"
+    text: "Может просматривать экземпляр сущности [изображение сертификата]"
+  can_index_bn_warrant_images:
+    subsystem: "банк"
+    name: "can_index_bn_warrant_images"
+    text: "Может просматривать список экземпляров сущности [изображение сертификата]"
+  can_edit_bn_warrant_image:
+    subsystem: "банк"
+    name: "can_edit_bn_warrant_image"
+    text: "Может редактировать экземпляр сущности [изображение сертификата]"
+  can_delete_bn_warrant_image:
+    subsystem: "банк"
+    name: "can_delete_bn_warrant_image"
+    text: "Может удалять экземпляр сущности [изображение сертификата]"
+
+ #расходы наличными
+  can_create_bn_cash_cost:
+    subsystem: "банк"
+    name: "can_create_bn_cash_cost"
+    text: "Может создавать экземпляр сущности [расходы наличными]"
+  can_show_bn_cash_cost:
+    subsystem: "банк"
+    name: "can_show_bn_cash_cost"
+    text: "Может просматривать экземпляр сущности [расходы наличными]"
+  can_index_bn_cash_costs:
+    subsystem: "банк"
+    name: "can_index_bn_cash_costs"
+    text: "Может просматривать список экземпляров сущности [расходы наличными]"
+  can_edit_bn_cash_cost:
+    subsystem: "банк"
+    name: "can_edit_bn_cash_cost"
+    text: "Может редактировать экземпляр сущности [расходы наличными]"
+  can_delete_bn_cash_cost:
+    subsystem: "банк"
+    name: "can_delete_bn_cash_cost"
+    text: "Может удалять экземпляр сущности [расходы наличными]"
+
+ #тип расходов
+  can_create_bn_cost_type:
+    subsystem: "банк"
+    name: "can_create_bn_cost_type"
+    text: "Может создавать экземпляр сущности [тип расходов]"
+  can_show_bn_cost_type:
+    subsystem: "банк"
+    name: "can_show_bn_cost_type"
+    text: "Может просматривать экземпляр сущности [тип расходов]"
+  can_index_bn_cost_types:
+    subsystem: "банк"
+    name: "can_index_bn_cost_types"
+    text: "Может просматривать список экземпляров сущности [тип расходов]"
+  can_edit_bn_cost_type:
+    subsystem: "банк"
+    name: "can_edit_bn_cost_type"
+    text: "Может редактировать экземпляр сущности [тип расходов]"
+  can_delete_bn_cost_type:
+    subsystem: "банк"
+    name: "can_delete_bn_cost_type"
+    text: "Может удалять экземпляр сущности [тип расходов]"
+
+ #счёт филиала
+  can_create_bn_branch_account:
+    subsystem: "банк"
+    name: "can_create_bn_branch_account"
+    text: "Может создавать экземпляр сущности [счёт филиала]"
+  can_show_bn_branch_account:
+    subsystem: "банк"
+    name: "can_show_bn_branch_account"
+    text: "Может просматривать экземпляр сущности [счёт филиала]"
+  can_index_bn_branch_accounts:
+    subsystem: "банк"
+    name: "can_index_bn_branch_accounts"
+    text: "Может просматривать список экземпляров сущности [счёт филиала]"
+  can_edit_bn_branch_account:
+    subsystem: "банк"
+    name: "can_edit_bn_branch_account"
+    text: "Может редактировать экземпляр сущности [счёт филиала]"
+  can_delete_bn_branch_account:
+    subsystem: "банк"
+    name: "can_delete_bn_branch_account"
+    text: "Может удалять экземпляр сущности [счёт филиала]"
+
+ #связка марка-сертификат
+  can_create_bn_mark_warrant:
+    subsystem: "банк"
+    name: "can_create_bn_mark_warrant"
+    text: "Может создавать экземпляр сущности [связка марка-сертификат]"
+  can_show_bn_mark_warrant:
+    subsystem: "банк"
+    name: "can_show_bn_mark_warrant"
+    text: "Может просматривать экземпляр сущности [связка марка-сертификат]"
+  can_index_bn_mark_warrants:
+    subsystem: "банк"
+    name: "can_index_bn_mark_warrants"
+    text: "Может просматривать список экземпляров сущности [связка марка-сертификат]"
+  can_edit_bn_mark_warrant:
+    subsystem: "банк"
+    name: "can_edit_bn_mark_warrant"
+    text: "Может редактировать экземпляр сущности [связка марка-сертификат]"
+  can_delete_bn_mark_warrant:
+    subsystem: "банк"
+    name: "can_delete_bn_mark_warrant"
+    text: "Может удалять экземпляр сущности [связка марка-сертификат]"
+
+ #дисконтная карта
+  can_create_bn_discount_card:
+    subsystem: "банк"
+    name: "can_create_bn_discount_card"
+    text: "Может создавать экземпляр сущности [дисконтная карта]"
+  can_show_bn_discount_card:
+    subsystem: "банк"
+    name: "can_show_bn_discount_card"
+    text: "Может просматривать экземпляр сущности [дисконтная карта]"
+  can_index_bn_discount_cards:
+    subsystem: "банк"
+    name: "can_index_bn_discount_cards"
+    text: "Может просматривать список экземпляров сущности [дисконтная карта]"
+  can_edit_bn_discount_card:
+    subsystem: "банк"
+    name: "can_edit_bn_discount_card"
+    text: "Может редактировать экземпляр сущности [дисконтная карта]"
+  can_delete_bn_discount_card:
+    subsystem: "банк"
+    name: "can_delete_bn_discount_card"
+    text: "Может удалять экземпляр сущности [дисконтная карта]"
+  can_show_sales_of_bn_discount_card:
+    subsystem: "банк"
+    name: "can_show_sales_of_bn_discount_card"
+    text: "Может смотреть продажи дисконтной карты"
+  can_change_amount_bn_discount_cards:
+    subsystem: "банк"
+    name: "can_change_amount_bn_discount_cards"
+    text: "Может менять диапазон дисконтных карт"
+  can_create_ranges_bn_discount_cards:
+    subsystem: "банк"
+    name: "can_create_ranges_bn_discount_cards"
+    text: "Может создавать диапазон дисконтных карт"
+  can_add_bn_discount_card:
+    subsystem: "банк"
+    name: "can_add_bn_discount_card"
+    text: "Может выдавать дисконтные карты"
+  can_load_ranges_bn_discount_cards:
+    subsystem: "банк"
+    name: "can_load_ranges_bn_discount_cards"
+    text: "Может отгружать диапазон дисконтных карт в филиал"
+  can_confirm_ranges_bn_discount_cards:
+    subsystem: "банк"
+    name: "can_confirm_ranges_bn_discount_cards"
+    text: "Может подтверждать получение диапазон дисконтных карт"
+  can_set_arbitrary_discount:
+    subsystem: "банк"
+    name: "can_set_arbitrary_discount"
+    text: "Может устанавливать скидку произвольно"
+
+ #склад
+  can_create_bn_warehouse:
+    subsystem: "банк"
+    name: "can_create_bn_warehouse"
+    text: "Может создавать экземпляр сущности [склад]"
+  can_show_bn_warehouse:
+    subsystem: "банк"
+    name: "can_show_bn_warehouse"
+    text: "Может просматривать экземпляр сущности [склад]"
+  can_index_bn_warehouses:
+    subsystem: "банк"
+    name: "can_index_bn_warehouses"
+    text: "Может просматривать список экземпляров сущности [склад]"
+  can_edit_bn_warehouse:
+    subsystem: "банк"
+    name: "can_edit_bn_warehouse"
+    text: "Может редактировать экземпляр сущности [склад]"
+  can_delete_bn_warehouse:
+    subsystem: "банк"
+    name: "can_delete_bn_warehouse"
+    text: "Может удалять экземпляр сущности [склад]"
+
+#банк
+ #периодическая затрата
+  can_create_bn_periodical_cost:
+    subsystem: "банк"
+    name: "can_create_bn_periodical_cost"
+    text: "Может создавать экземпляр сущности [периодическая затрата]"
+  can_show_bn_periodical_cost:
+    subsystem: "банк"
+    name: "can_show_bn_periodical_cost"
+    text: "Может просматривать экземпляр сущности [периодическая затрата]"
+  can_index_bn_periodical_costs:
+    subsystem: "банк"
+    name: "can_index_bn_periodical_costs"
+    text: "Может просматривать список экземпляров сущности [периодическая затрата]"
+  can_edit_bn_periodical_cost:
+    subsystem: "банк"
+    name: "can_edit_bn_periodical_cost"
+    text: "Может редактировать экземпляр сущности [периодическая затрата]"
+  can_delete_bn_periodical_cost:
+    subsystem: "банк"
+    name: "can_delete_bn_periodical_cost"
+    text: "Может удалять экземпляр сущности [периодическая затрата]"
+  can_show_bn_branch_rentability:
+    subsystem: "банк"
+    name: "can_show_bn_branch_rentability"
+    text: "Может просматривать рентабельность"
+#банк
+ #матрицы товаров
+  can_load_forecast:
+    subsystem: "прогнозы"
+    name: "can_load_forecast"
+    text: "Может загружать матрицу товаров"
+  can_show_matrix:
+    subsystem: "прогнозы"
+    name: "can_show_matrix"
+    text: "Может просматривать матрицу товаров"
+  can_edit_matrix:
+    subsystem: "прогнозы"
+    name: "can_edit_matrix"
+    text: "Может редактировать матрицу товаров"
+#банк
+# просмотр отчета по продажам
+  can_get_general_report:
+    subsystem:  "банк"
+    name: "can_get_general_report"
+    text: "Может просматривать общую сводку"
+
+  can_get_auto_revenue_details:
+    subsystem:  "банк"
+    name: "can_get_auto_revenue_details"
+    text: "Может просматривать подробную информацию об автовыручке"
+
+  can_show_all_discount_cards_ranges:
+    subsystem: "дисконтные карты"
+    name: "can_show_all_discount_cards_ranges"
+    text: "Может смотреть все диапазоны дисконтных карт"
+
+  can_show_self_discount_cards_ranges:
+    subsystem: "дисконтные карты"
+    name: "can_show_self_discount_cards_ranges"
+    text: "Может смотреть диапазоны дисконтных карт своего филиала"
+
+
+#банк
+ #поставщик
+  can_create_bn_producer:
+    subsystem: "банк"
+    name: "can_create_bn_producer"
+    text: "Может создавать экземпляр сущности [поставщик]"
+  can_show_bn_producer:
+    subsystem: "банк"
+    name: "can_show_bn_producer"
+    text: "Может просматривать экземпляр сущности [поставщик]"
+  can_index_bn_producers:
+    subsystem: "банк"
+    name: "can_index_bn_producers"
+    text: "Может просматривать список экземпляров сущности [поставщик]"
+  can_edit_bn_producer:
+    subsystem: "банк"
+    name: "can_edit_bn_producer"
+    text: "Может редактировать экземпляр сущности [поставщик]"
+  can_delete_bn_producer:
+    subsystem: "банк"
+    name: "can_delete_bn_producer"
+    text: "Может удалять экземпляр сущности [поставщик]"
+
+ #переброс товара
+  can_create_bn_transfer:
+    subsystem: "банк"
+    name: "can_create_bn_transfer"
+    text: "Может создавать экземпляр сущности [переброс товара]"
+  can_show_bn_transfer:
+    subsystem: "банк"
+    name: "can_show_bn_transfer"
+    text: "Может просматривать экземпляр сущности [переброс товара]"
+  can_index_bn_transfers:
+    subsystem: "банк"
+    name: "can_index_bn_transfers"
+    text: "Может просматривать список экземпляров сущности [переброс товара]"
+  can_edit_bn_transfer:
+    subsystem: "банк"
+    name: "can_edit_bn_transfer"
+    text: "Может редактировать экземпляр сущности [переброс товара]"
+  can_delete_bn_transfer:
+    subsystem: "банк"
+    name: "can_delete_bn_transfer"
+    text: "Может удалять экземпляр сущности [переброс товара]"
+
+  can_show_producer_report_all_marks:
+    subsystem: "банк"
+    name: "can_show_producer_report_all_marks"
+    text: "Может смотреть отчеты поставщикам по всем маркам"
+  can_show_producer_report_self_marks:
+    subsystem: "банк"
+    name: "can_show_producer_report_self_marks"
+    text: "Может смотреть отчеты поставщикам по своим маркам"
+#банк
+# просмотр отчета об оборудовании
+  can_show_equipment_report:
+    subsystem: "банк"
+    name: "can_show_equipment_report"
+    text: "Может смотреть отчеты по оборудованию"
+ #sms отчет
+  can_show_sms_report:
+    subsystem: "банк"
+    name: "can_show_sms_report"
+    text: "Может смотреть краткую сводку (СМС)"
+  #Количество посетителей филиала
+  can_show_visitors_count:
+    subsystem: "банк"
+    name: "can_show_visitors_count"
+    text: "Может смотреть количество посетителей филиала"
+  can_load_catalogue:
+    subsystem: "банк"
+    name: "can_load_catalogue"
+    text: "Может загружать файлы в каталог"
+  can_show_sales_report_by_articles:
+    subsystem: "банк"
+    name: "can_show_sales_report_by_articles"
+    text: "Может смотреть отчёты по артикулам"
+  can_show_sales_report_by_categories:
+    subsystem: "банк"
+    name: "can_show_sales_report_by_categories"
+    text: "Может смотреть отчёты по категориям"
+  can_show_cash_cost_report:
+    subsystem: "банк"
+    name: "can_show_cash_cost_report"
+    text: "Может смотреть отчёты по расходам наличными"
+#ввод данных вручную
+  can_input_data:
+    subsystem: "банк"
+    name: "can_input_data"
+    text: "Может вводить данные вручную"
+#СМС рассылка
+  can_create_sms_sending:
+    subsystem: "банк"
+    name: "can_create_sms_sending"
+    text: "Может создать СМС рассылку"
+  can_index_sms_sending:
+    subsystem: "банк"
+    name: "can_index_sms_sending"
+    text: "Может смотреть список СМС рассылок"
+  can_show_sms_sending:
+    subsystem: "банк"
+    name: "can_show_sms_sending"
+    text: "Может смотреть СМС рассылку"
+  can_edit_sms_sending:
+    subsystem: "банк"
+    name: "can_edit_sms_sending"
+    text: "Может редактировать СМС рассылку"
+  can_delete_sms_sending:
+    subsystem: "банк"
+    name: "can_delete_sms_sending"
+    text: "Может удалять СМС рассылку"
+  can_activate_sms_sending:
+      subsystem: "банк"
+      name: "can_activate_sms_sending"
+      text: "Может активировать СМС рассылку"
+  can_deactivate_sms_sending:
+      subsystem: "банк"
+      name: "can_deactivate_sms_sending"
+      text: "Может деактивировать СМС рассылку"
+  receives_notice_about_sms_sending:
+      subsystem: "банк"
+      name: "receives_notice_about_sms_sending"
+      text: "Получает уведомления об СМС-рассылке"

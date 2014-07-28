@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<params>
+  <param name="SReceivePRM">C:\Program Files\DataExchanger\PRM\SReceive.prm</param>
+  <param name="AutoexchangePRM">C:\Program Files\DataExchanger\PRM\Autoexchange.prm</param>
+  <param name="1c_user">dataexchanger</param>
+  <param name="ftp_user">1c_upload</param>
+  <param name="1c_pass">123</param>
+
+  <param name="AutoexchangeHour">20</param>
+  <param name="SSendPRM">C:\Program Files\DataExchanger\PRM\SSend.prm</param>
+  <param name="1cprog_path">C:\Program Files\1cv81\bin\1cv8.exe</param>
+  <param name="shopRus">__SHOPNAME__</param>
+
+  <param name="AutoexchangeMinute">50</param>
+  <param name="shop">__SHOPLOGIN__</param>
+  <param name="ftp_pass">dTSzV43</param>
+  <param name="ftp_server">mattino.mattino.ru</param>
+
+  <param name="test">test</param>
+
+  <param name="1cprog_path">C:\Program Files\1cv81\bin\1cv8.exe</param>  
+  <param name="1cprog_version">8.1</param>
+  <param name="1cprog_sql">false</param>
+
+  <param name="system_windows_usballow">c-dir</param>  
+</params>

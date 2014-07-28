@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<params>
+  <param name="1cprog_path">C:\Program Files (x86)\1cv82\common\1cestart.exe</param>
+  <param name="1cprog_version">8.2</param>
+  <param name="1cbase_path">\\server-101\_db_1s\_dataexchanger\torg.ie_semenov.base\</param>
+  <param name="PCFilename">Message_MCO_PCO.zip</param>
+  <param name="1c_base">ИП Семенов С.А. (Управление торговлей)SQL</param>
+  <param name="CPFilename">Message_PCO_MCO.zip</param>
+ <param name="1cprog_sql">true</param>
+</params>
+

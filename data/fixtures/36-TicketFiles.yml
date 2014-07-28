@@ -1,0 +1,11 @@
+TicketFile:
+  -
+    codename:			"234972847497324.jpg"
+    name:				"delete_me.jpg"
+    User: 				initiator
+    Ticket:	 			open
+  -
+    codename:			"314453fabc23232.doc"
+    name:				"delete_me.doc"
+    User:	 			executor
+    Ticket:	 			open

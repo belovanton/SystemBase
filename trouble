@@ -1,0 +1,87 @@
+*    *   *    *   *     root   /opt/scripts/trouble.mattino.ru.sh './symfony ldap:ChangeUsername'
+10   0   *    *   *  	root   /opt/scripts/trouble.mattino.ru.sh '/opt/scripts/trouble.mattino.ru.ExportLdapChanges.sh' >> /var/log/exportLdapChanges;
+42   0   *    *   *	root   /opt/scripts/trouble.mattino.ru.sh './symfony ticket:closeCompleted';
+#add close by lifetime
+00   9   *    *   *     root   /opt/scripts/trouble.mattino.ru.sh './symfony ticket:CloseByLifetime';
+#clear old tfMailNotification
+#00   7   *    *   *     root   /opt/scripts/trouble.mattino.ru.sh './symfony clearNotifications'; #dont working....
+
+00   8   *    *   *     root   /opt/scripts/trouble.mattino.ru.sh './symfony user:oldExternalRemove'
+42   1   *    *   *	root   /opt/scripts/trouble.mattino.ru.sh './symfony topic:generateFeedbackStaffs';
+42   2   */5  *   *	root   /opt/scripts/trouble.mattino.ru.sh './symfony mailUnactiveTickets';
+*/2  *   *    *   *	root   /opt/scripts/trouble.mattino.ru.sh './symfony getMail';
+*    *   *    *   *	root   /opt/scripts/trouble.mattino.ru.sh './symfony mailToSMS';
+
+#Отправка уведомлений
+*/5    *   *    *   *	root   /opt/scripts/trouble.mattino.ru.sh './symfony sendNotifications' >> /var/log/sendNotifications;
+0    2   */5  *   *     root	echo 0 > /var/log/sendNotifications
+#Скрипт убивает процесс sendNotification использовался когда он зависал
+#00,30    *   *    *   *     root    /bin/kill -9 `ps aux | grep "php ./symfony sendNotifications" | grep root | awk '{print $2}'`
+
+#Anton Belov: скрипт обновляющий группу Директоры и товароведы со данными старого сайта. Отключен 08.01.2013
+#*    0   *    *   *	root   /opt/scripts/trouble.mattino.ru.sh './symfony transfer:user';
+*    *   *    *   *	root   /opt/scripts/trouble.mattino.ru.sh './symfony smpp:remove-old-keys';
+# Denis.Gorbachev: не включать до завершения тестов Автообмена #
+#0    */2   *    *   *	root   /opt/scripts/trouble.mattino.ru.sh './symfony bank:importSalesInfoScheduler';
+0    1   *    *   *	root   /opt/scripts/trouble.mattino.ru.sh './symfony bank:importBranchAccountsScheduler';
+
+#Plan
+10    1   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony updateSalesStats /var/ftp/www.mattino.ru/dataexchanger/shop.mattino.ru';
+
+#Anton Belov. refactor and updated
+#import
+*     *   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony clearMultithread'
+01    6   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bankMarkCategoryImport /var/ftp/www.mattino.ru/dataexchanger/shop.mattino.ru' > /var/log/msBnCatalogueImportLog;
+01    6   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bankColorGroupsImport /var/ftp/www.mattino.ru/dataexchanger/shop.mattino.ru';
+15    6   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bankArticlesImport /var/ftp/www.mattino.ru/dataexchanger/shop.mattino.ru --threads=80 --debug=0';
+*     *   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bankArticlesExport --folder=articles --ishop=false'
+*     *   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bankArticlesExport --folder=articles-shop --ishop=yes'
+
+*     *   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bankArticlesImageImport /var/ftp/www.mattino.ru/dataexchanger/shop.mattino.ru --threads=120 --debug=0';
+
+#export
+48   6   *    *   *    root    /opt/scripts/trouble.mattino.ru.sh './symfony bank:generateArticlesParametrsCSV --folder=articles-shop'
+45   6   *    *   *    root    /opt/scripts/trouble.mattino.ru.sh './symfony bank:generateArticlesParametrsCSV --folder=articles';
+15   6   *    *   *    root    /opt/scripts/trouble.mattino.ru.sh '/opt/scripts/trouble.mattino.ru.UpdateSalesPlan.sh';
+
+0    2   *    *   *	root   /opt/scripts/trouble.mattino.ru.sh './symfony user:synchronize-with-organization';
+0    4   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bank:importArticlesScheduler';
+#0    5   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bank:importArticleImagesScheduler';
+0    1   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bank:loadArticleImages';
+0    6   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bank:importProducts';
+30    1   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony branch:updateLocation';
+0    *   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony branch:generateYandexData';
+#0    0   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony branch:sync';
+#0    1   *    *   *     root   /root/mkdump /var/www/trouble.mattino.ru/web/dump-full.sql
+*/10    *       * * *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bank:updateSalesInfo --data-dir=/var/ftp/www.mattino.ru/dataexchanger' >> /var/log/sales;
+*/15    *       * * *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bank:updateSalesInfo --data-dir=/var/ftp/www.mattino.ru/dataexchanger --pattern=voz*.dbf' >> /var/log/sales;
+*/10    *       * * *   root   /opt/scripts/trouble.mattino.ru.sh '/opt/scripts/trouble.mattino.ru.updateCache.sh 1' >> /var/log/updateCacheShortInterval;
+15    5       * * *   root   /opt/scripts/trouble.mattino.ru.sh '/opt/scripts/trouble.mattino.ru.updateCacheBranchUsedCapacity.sh 1' >> /var/log/updateCacheBranchUsedCapacity;
+0    0       * * *   root   /opt/scripts/trouble.mattino.ru.sh '/opt/scripts/trouble.mattino.ru.updateCache.sh 30' >> /var/log/updateCacheLongInterval;
+20    0       * * *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bank:discountCardsFix' >> /var/log/bank_discountCardsFix;
+
+
+30    10      * * 1   root   /opt/scripts/trouble.mattino.ru.sh './symfony user:BirthdayReminder'
+# Generate dk.dbf without incremental data
+30    0       1 * *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bank:generateDiscountCardsDBF --filename=/var/ftp/www.mattino.ru/dataexchanger/discount/dk.dbf';
+# Generate dk.dbf (incremental data only)
+30    0       1 * *   root   rm -f /var/ftp/www.mattino.ru/dataexchanger/discount/dk.full.dbf;
+30    5       * * *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bank:generateDiscountCardsDBF --filename=/var/ftp/www.mattino.ru/dataexchanger/discount/dk.dbf --file-alldata=/var/ftp/www.mattino.ru/dataexchanger/discount/dk.full.dbf';
+
+
+
+*    *       * * *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bank:massSmsSender' >> /var/log/bank_massSmsSender;
+0    *   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony discount-card:add-ranges';
+0    1   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bank:discountCardsRecalculateDiscounts';
+0    1   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bank:createDataExchangerDirectories';
+
+#change one to multithread
+*/15   *   *    *   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony branch:people-per-minute /var/ftp/www.mattino.ru/dataexchanger/countmax/ /var/ftp/www.mattino.ru/dataexchanger/countmax-backup/ --ignore_codes=80543929' >> /var/log/people_per_minute;
+# ВКЛЮЧИТЬ ПОСЛЕ ПЕРЕВОДА АВТООБМЕНА НА НОВЫЙ САЙТ
+10 13,18,22 *	*   *   root   /opt/scripts/trouble.mattino.ru.sh './symfony bank:short-sms-report';
+0   0   *   *   *   root    /opt/scripts/trouble.mattino.ru.sh '/opt/scripts/trouble.mattino.ru.dxRemoveOldData.sh';
+# Temporary
+5    1   *    *   *   root   /etc/init.d/apache2 restart
+4    1   *    *   *   root   /etc/init.d/nginx restart
+0    *   *    *   *   root   php -r "echo time();" > /var/www/trouble.mattino.ru/web/api/dataexchanger/lastUpdate.html
+0    *   *    *   *   root   /root/logLastSale

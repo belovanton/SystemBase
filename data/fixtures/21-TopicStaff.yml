@@ -1,0 +1,105 @@
+TopicStaff:
+  -
+    User: executor
+    Topic: testroot
+    job: primary_executor
+  -
+    User: external
+    Topic: testroot2
+    job: primary_executor
+  -
+    User: executor
+    Topic: testroot3
+    job: secondary_executor
+  -
+    User: third_admin
+    Topic: testroot3
+    job: primary_executor
+  -
+    User: admin
+    Topic: testroot3
+    job: observer
+  -
+    User: admin
+    Topic: test
+    job: observer
+  -
+    User: executor
+    Topic: testroot4
+    job: primary_executor
+  -
+    User: executor
+    Topic: testroot5
+    job: primary_executor
+  -
+    User: executor
+    Topic: test
+    job: primary_executor
+  -
+    User: executor_second
+    Topic: test
+    job: secondary_executor
+  -
+    User: executor
+    Topic: test2
+    job: primary_executor
+  -
+    User: executor_second
+    Topic: test2
+    job: secondary_executor
+  -
+    User: executor
+    Topic: test4
+    job: primary_executor
+  -
+    User: external
+    Topic: test5
+    job: manager
+  -
+    User: executor_second
+    Topic: test5
+    job: observer
+  -
+    User: executor
+    Topic: test6
+    job: primary_executor
+  -
+    User: executor_second
+    Topic: test6
+    job: secondary_executor
+  -
+    User:		executor
+    Topic:	infotell
+    job:		primary_executor
+  -
+    User:		executor
+    Topic:	infotell_child
+    job:		primary_executor
+  -
+    User:		executor
+    Topic:  no_category
+    job:	primary_executor
+  -
+    User:		executor
+    Topic:	infotell_complaint
+    job:		primary_executor
+  -
+    User:		executor
+    Topic:	infotell_wishes
+    job:		primary_executor
+  -
+    User:		executor
+    Topic:	infotell_employment_questions
+    job:		primary_executor
+  -
+    User:       admin
+    Topic:      topic_with_distributor
+    job:        distributor
+  -
+    User:       initiator
+    Topic:      topic_with_distributor
+    job:        primary_executor
+  -
+    User:       executor
+    Topic:      topic_with_distributor
+    job:        secondary_executor

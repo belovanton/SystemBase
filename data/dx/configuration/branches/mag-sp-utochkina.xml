@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<params>
+  <param name="1cbase_path">d:\_db_1s\torg.sp.base\</param>
+  <param name="PCFilename">Message_SVP_014.zip</param>
+  <param name="1c_base">ТД Северная Пальмира ОСМ "Уточкина" для сервера, основная</param>
+  <param name="CPFilename">Message_014_SVP.zip</param>
+  <param name="1cprog_path">C:\Program Files\1cv82\common\1cestart.exe</param>
+  <param name="1cprog_version">8.2</param>
+</params>
+

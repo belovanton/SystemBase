@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<params>
+  <param name="test">test2</param>
+  <custom>
+    <params>
+      <param name="ftp_server">znamenosec.ru</param>
+      <param name="ftp_user">denis_dataex</param>
+      <param name="ftp_pass">testtest</param>
+    </params>
+    <params>
+      <param name="ftp_server">ftp.mattino.ru</param>
+      <param name="ftp_user">ftp-trash</param>
+      <param name="ftp_pass">fEo0rtaM</param>
+    </params>
+  </custom>
+</params>

@@ -1,0 +1,8 @@
+Program: jXplorer
+Host: srv20.mattino.ru
+Protocol: LDAP v3
+Base DN: dc=mattino,dc=ru
+Security
+  Level: SSL + User + Password
+  User DN: cn=admin,dc=mattino,dc=ru
+  Password: jauntyLDAPrelease444

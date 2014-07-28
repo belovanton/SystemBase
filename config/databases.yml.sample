@@ -1,0 +1,17 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn:      mysql:host=localhost;dbname=mask
+      username: root
+      password: 
+      attributes:
+        use_native_enum: true
+        use_native_set: true
+        use_dql_callbacks: true
+  mattino_site:
+    class: sfPDODatabase
+    param:
+      dsn:      mysql:host=localhost;dbname=mattino_site
+      username: 'root'
+      password: ''

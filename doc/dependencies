@@ -1,0 +1,31 @@
+sudo a2enmod rewrite # Для symfony
+sudo /etc/init.d/apache2 restart # Apache restart
+sudo apt-get install xvfb # Для генерации PDF
+sudo apt-get install slapd  # Для генерации LDAP-паролей
+sudo apt-get install php-pear # Для Net_LDAP2
+sudo apt-get install php5-ldap # Для Net_LDAP2
+sudo pear upgrade # Для установки PHPUnit
+sudo pear install Net_LDAP2 # Для интеграции с LDAP
+#===================[dbase]===================
+sudo apt-get install php5-dev
+pushd /tmp
+wget http://pecl.php.net/get/dbase-5.0.1.tgz
+tar zxvf dbase-5.0.1.tgz
+cd dbase-5.0.1
+phpize
+./configure
+make
+sudo make install
+if [ "`cat /etc/php5/cli/php.ini | grep '^\s*extension=dbase.so' | wc -l`" -eq 0 ]; then
+    sudo sh -c "echo extension=dbase.so >> /etc/php5/cli/php.ini"
+else
+    echo "extension=dbase.so alredy defined at /etc/php5/cli/php.ini"
+fi
+cd ..
+rm -rf ./dbase-5.0.1.tgz ./package.xml ./dbase-5.0.1
+popd
+#=============================================
+sudo pear channel-discover pear.phpunit.de # Для установки PHPUnit
+sudo pear channel-discover components.ez.no # Для установки PHPUnit
+sudo pear channel-discover pear.symfony-project.com # Для установки PHPUnit
+sudo pear install phpunit/PHPUnit # Для тестирования

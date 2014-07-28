@@ -1,0 +1,510 @@
+Group:
+  NestedSet:		true
+  super-users:
+    name: "Суперпользователи"
+    internal_name: "SuperUsers"
+    text: "Привилегированые пользователи"
+    is_rc_sms_info: true
+    Permissions:
+      - 'can_access_admin_panel'
+      - 'super_can_change_urgent'
+      - 'super_can_show'
+      - 'super_can_modify_content'
+      - 'super_can_index'
+      - 'super_can_change_topic'
+      - 'super_can_change_parent'
+      - 'super_can_change_executor'
+      - 'super_can_add_commentary'
+      - 'super_can_complete'
+      - 'super_can_close'
+      - 'super_can_open'
+      - 'super_can_create_file'
+      - 'can_index_topic'
+      - 'can_extend_staffs'
+      - 'can_load_topic_tree'
+      - 'can_load_topic_tree_with_inactive'
+      - 'can_show_topic'
+      - 'can_create_topic'
+      - 'can_create_topic_staff'
+      - 'can_edit_topic'
+      - 'can_edit_topic_staff'
+      - 'super_can_edit_file'
+      - 'can_delete_topic'
+      - 'can_delete_topic_staff'
+      - 'can_transfer_topic_staff'
+      - 'can_create_infotell'
+      - 'super_can_delete_file'
+      - 'super_can_get_file'
+      - 'super_can_get_report'
+      - 'super_can_create_dependency'
+      - 'can_show_organization_category'
+      - 'can_create_organization_category'
+      - 'can_edit_organization_category'
+      - 'can_delete_organization_category'
+      - 'can_index_group'
+      - 'can_show_group'
+      - 'can_create_group'
+      - 'can_edit_group'
+      - 'can_delete_group'
+      - 'can_load_group_tree'
+# Orders.
+      - 'can_create_order'
+      - 'can_show_order'
+      - 'can_add_text_order'
+      - 'can_cancel_order'
+      - 'can_delete_order'
+      - 'can_stat_order'
+      - 'can_edit_order'
+      - 'can_create_file_order'
+      - 'can_edit_file_order'
+      - 'can_delete_file_order'
+# Orders -> super credentials.
+      - 'can_show_any_order'
+      - 'can_add_text_any_order'
+      - 'can_cancel_any_order'
+      - 'can_delete_any_order'
+      - 'can_stat_any_order'
+      - 'can_edit_any_order'
+# Branch system.
+      - 'can_have_access_to_ms_br_branch'
+      - 'can_edit_access_list_to_ms_br_branch'
+# Branch system -> Branch
+      - 'can_index_branches'
+      - 'can_create_branch'
+      - 'can_show_branch'
+      - 'can_edit_branch'
+      - 'can_delete_branch'
+      - 'can_show_branch_technical_comments'
+      - 'can_edit_branch_technical_comments'
+      - 'can_show_branch_public_technical_comments'
+      - 'can_edit_branch_public_technical_comments'
+# Branch system -> Equipment
+      - 'can_index_branch_equipment'
+      - 'can_create_branch_equipment'
+      - 'can_show_branch_equipment'
+      - 'can_edit_branch_equipment'
+      - 'can_transmit_branch_equipment'
+      - 'can_delete_branch_equipment'
+# Branch system -> Category
+      - 'can_index_branch_categories'
+      - 'can_create_branch_category'
+      - 'can_edit_branch_category'
+      - 'can_delete_branch_category'
+      - 'can_change_any_password'
+      - 'can_edit_non_ldap_users'
+      - 'can_edit_ldap_users'
+      - 'can_delete_users_from_ldap'
+      - 'can_insert_user_into_ldap'
+      - 'can_edit_users_activity'
+      - 'can_index_users'
+      - 'can_filter_users'
+      - 'can_transfer_user_items'
+      - 'can_delele_non_ldap_user'
+      - 'can_edit_own_profile'
+      - 'can_edit_own_password'
+      - 'can_edit_own_mobile'
+      - 'can_edit_any_mobile'
+# msDataexchangerPlugin
+      - 'can_index_ms_dx_tasks'
+      - 'can_show_ms_dx_task'
+      - 'can_create_ms_dx_task'
+      - 'can_edit_ms_dx_task'
+      - 'can_delete_ms_dx_task'
+      - 'can_index_ms_dx_actions'
+      - 'can_show_ms_dx_action'
+      - 'can_create_ms_dx_action'
+      - 'can_edit_ms_dx_action'
+      - 'can_delete_ms_dx_action'
+      - 'can_index_ms_dx_plans'
+      - 'can_show_ms_dx_plan'
+      - 'can_create_ms_dx_plan'
+      - 'can_edit_ms_dx_plan'
+      - 'can_delete_ms_dx_plan'
+      - 'can_index_dx_status'
+      - 'can_index_ms_dx_task_requests'
+      - 'can_create_ms_dx_task_request'
+      - 'can_load_catalogue'
+
+# requisites
+      - 'can_show_all_requisites'
+      - 'can_show_own_organizations_and_linked_branches_requisites'
+
+# bank
+
+
+#артикул
+      - can_create_bn_article
+      - can_show_bn_article
+      - can_index_bn_articles
+      - can_edit_bn_article
+      - can_delete_bn_article
+      - can_balance_bn_article
+#марка
+      - can_create_bn_mark
+      - can_show_bn_mark
+      - can_index_bn_marks
+      - can_edit_bn_mark
+      - can_delete_bn_mark
+#категория
+      - can_create_bn_category
+      - can_show_bn_category
+      - can_index_bn_categorys
+      - can_edit_bn_category
+      - can_delete_bn_category
+      - can_category_objects_transmit
+#категория интернет-магазина
+      - can_create_bn_shop_category
+      - can_show_bn_shop_category
+      - can_edit_bn_shop_category
+      - can_delete_bn_shop_category
+      - can_category_bn_shop_category
+#материал
+      - can_create_bn_material
+      - can_show_bn_material
+      - can_index_bn_materials
+      - can_edit_bn_material
+      - can_delete_bn_material
+#товар
+      - can_create_bn_product
+      - can_show_bn_product
+      - can_index_bn_products
+      - can_edit_bn_product
+      - can_delete_bn_product
+#цвет
+      - can_create_bn_color
+      - can_show_bn_color
+      - can_index_bn_colors
+      - can_edit_bn_color
+      - can_delete_bn_color
+#группа цветов
+      - can_create_bn_color_group
+      - can_show_bn_color_group
+      - can_index_bn_color_groups
+      - can_edit_bn_color_group
+      - can_delete_bn_color_group
+#штрихкод
+      - can_create_bn_bar_code
+      - can_show_bn_bar_code
+      - can_index_bn_bar_codes
+      - can_edit_bn_bar_code
+      - can_delete_bn_bar_code
+#информация о продаже
+      - can_create_bn_sale_info
+      - can_show_bn_sale_info
+      - can_index_bn_sale_infos
+      - can_edit_bn_sale_info
+      - can_delete_bn_sale_info
+#отчет по дисконтной карте
+      - can_show_discount_card_report
+#владелец дисконтной карты
+      - can_create_bn_discount_card_owner
+      - can_show_bn_discount_card_owner
+      - can_index_bn_discount_card_owners
+      - can_edit_bn_discount_card_owner
+      - can_delete_bn_discount_card_owner
+#сертификат
+      - can_create_bn_warrant
+      - can_show_bn_warrant
+      - can_index_bn_warrants
+      - can_edit_bn_warrant
+      - can_delete_bn_warrant
+#изображение
+      - can_create_bn_image
+      - can_show_bn_image
+      - can_index_bn_images
+      - can_edit_bn_image
+      - can_delete_bn_image
+#изображение картиинки
+      - can_create_bn_article_image
+      - can_show_bn_article_image
+      - can_index_bn_article_images
+      - can_edit_bn_article_image
+      - can_delete_bn_article_image
+#изображение сертификата
+      - can_create_bn_warrant_image
+      - can_show_bn_warrant_image
+      - can_index_bn_warrant_images
+      - can_edit_bn_warrant_image
+      - can_delete_bn_warrant_image
+#расходы наличными
+      - can_create_bn_cash_cost
+      - can_show_bn_cash_cost
+      - can_index_bn_cash_costs
+      - can_edit_bn_cash_cost
+      - can_delete_bn_cash_cost
+#тип расходов
+      - can_create_bn_cost_type
+      - can_show_bn_cost_type
+      - can_index_bn_cost_types
+      - can_edit_bn_cost_type
+      - can_delete_bn_cost_type
+#счёт филиала
+      - can_create_bn_branch_account
+      - can_show_bn_branch_account
+      - can_index_bn_branch_accounts
+      - can_edit_bn_branch_account
+      - can_delete_bn_branch_account
+#связка марка-сертификат
+      - can_create_bn_mark_warrant
+      - can_show_bn_mark_warrant
+      - can_index_bn_mark_warrants
+      - can_edit_bn_mark_warrant
+      - can_delete_bn_mark_warrant
+#дисконтная карта
+      - can_create_bn_discount_card
+      - can_show_bn_discount_card
+      - can_index_bn_discount_cards
+      - can_edit_bn_discount_card
+      - can_delete_bn_discount_card
+      - can_show_sales_of_bn_discount_card
+      - can_change_amount_bn_discount_cards
+      - can_add_bn_discount_card
+      - can_load_ranges_bn_discount_cards
+      - can_confirm_ranges_bn_discount_cards
+      - can_set_arbitrary_discount
+#склад
+      - can_create_bn_warehouse
+      - can_show_bn_warehouse
+      - can_index_bn_warehouses
+      - can_edit_bn_warehouse
+      - can_delete_bn_warehouse
+#периодическая затрата
+      - can_create_bn_periodical_cost
+      - can_show_bn_periodical_cost
+      - can_index_bn_periodical_costs
+      - can_edit_bn_periodical_cost
+      - can_delete_bn_periodical_cost
+      - can_show_bn_branch_rentability
+#прогнозы
+      - can_load_forecast
+      - can_show_matrix
+      - can_edit_matrix
+#поставщик
+      - can_create_bn_producer
+      - can_show_bn_producer
+      - can_index_bn_producers
+      - can_edit_bn_producer
+      - can_delete_bn_producer
+#переброс товара
+      - can_create_bn_transfer
+      - can_show_bn_transfer
+      - can_index_bn_transfers
+      - can_edit_bn_transfer
+      - can_delete_bn_transfer
+#просмотр отчетов для поставщиков
+      - can_show_producer_report_all_marks
+      - can_show_producer_report_self_marks
+#просмотр отчета по продажам
+      - can_get_general_report
+      - can_get_auto_revenue_details
+      - can_show_sales_report_by_articles
+      - can_show_sales_report_by_categories
+      - can_show_cash_cost_report
+#дисконтные карты
+      - can_show_all_discount_cards_ranges
+      - can_show_self_discount_cards_ranges
+      - can_create_ranges_bn_discount_cards
+#отчет по оборудованию
+      - can_show_equipment_report
+#sms отчет
+      - can_show_sms_report
+#ввод данных вручную
+      - can_input_data
+#добавление пользователей
+      - can_add_users
+#СМС рассылка
+      - can_create_sms_sending
+      - can_index_sms_sending
+      - can_show_sms_sending
+      - can_edit_sms_sending
+      - can_delete_sms_sending
+      - can_activate_sms_sending
+      - can_deactivate_sms_sending
+      - receives_notice_about_sms_sending
+#просмотр количества посетителей
+      - can_show_visitors_count
+  users:
+    name: "Пользователи"
+    internal_name: "Users"
+    text: "Все пользователи"
+    Permissions:
+      - 'can_modify_content'
+      - 'can_change_topic'
+      - 'can_change_executor'
+      - 'can_set_parent'
+      - 'can_add_commentary'
+      - 'can_create_ticket'
+      - 'can_create_file'
+      - 'can_edit_file'
+      - 'can_delete_file'
+      - 'can_create_dependency'
+      - 'can_load_topic_tree'
+      - 'can_edit_own_mobile'
+  foreign-auth:
+    name: "Пользователи с авторизующей ссылкой"
+    internal_name: "ForeignAuth"
+    text: "Пользователи с авторизующей ссылкой"
+    Permissions:
+      - 'foreign_auth'
+  external-users:
+    name: "Внешние пользователи"
+    internal_name: "ExternalUsers"
+    text: "Внешние пользователи"
+  own-organization-users:
+    name: "Пользователи организаций"
+    internal_name: "OwnOrganizationUsers"
+    text: "Пользователи своих организаций"
+    Permissions:
+      - 'can_show_organization_own'
+      - 'can_create_organization_own'
+      - 'can_edit_organization_own'
+      - 'can_delete_organization_own'
+      - can_manage_requisites
+      - can_show_organization_own
+      - can_create_organization_own
+      - can_edit_organization_own
+      - can_delete_organization_own
+  own-organization-users1:
+    name: "Пользователи организации 1"
+    internal_name: "Organization1Users"
+    text: "Пользователи организации 1"
+    Permissions:
+      - 'can_show_organization_own'
+      - 'can_create_organization_own'
+      - 'can_edit_organization_own'
+      - 'can_delete_organization_own'
+      - can_manage_requisites
+      - can_show_organization_own
+      - can_create_organization_own
+      - can_edit_organization_own
+      - can_delete_organization_own
+  own-organization-users2:
+    name: "Пользователи организации 2"
+    internal_name: "Organization2Users"
+    text: "Пользователи организации2 "
+    Permissions:
+      - 'can_show_organization_own'
+      - 'can_create_organization_own'
+      - 'can_edit_organization_own'
+      - 'can_delete_organization_own'
+      - can_manage_requisites
+      - can_show_organization_own
+      - can_create_organization_own
+      - can_edit_organization_own
+      - can_delete_organization_own
+  public-organization-users:
+    name: "Пользователи публичных организаций"
+    internal_name: "PublicOrganizationUsers"
+    text: "Пользователи публичных организаций"
+    Permissions:
+      - 'can_show_organization_public'
+      - 'can_create_organization_public'
+      - 'can_edit_organization_public'
+      - 'can_delete_organization_public'
+      - can_manage_requisites
+      - can_show_organization_public
+      - can_create_organization_public
+      - can_edit_organization_public
+      - can_delete_organization_public
+      - 'can_edit_own_profile'
+  private-organization-users:
+    name: "Пользователи приватных организаций"
+    internal_name: "PrivateOrganizationUsers"
+    text: "Пользователи приватных организаций"
+    Permissions:
+      - 'can_show_organization_private'
+      - 'can_create_organization_private'
+      - 'can_edit_organization_private'
+      - 'can_delete_organization_private'
+      - can_manage_requisites
+      - can_show_organization_private
+      - can_create_organization_private
+      - can_edit_organization_private
+      - can_delete_organization_private
+  system-option-administrators:
+    name: "Администраторы системных настроек"
+    internal_name: "SystemOptionAdministrators"
+    text: "Администраторы системных настроек"
+    Permissions:
+      - 'can_show_group'
+      - 'can_create_group'
+      - 'can_edit_group'
+      - 'can_delete_group'
+      - 'can_show_config_files'
+      - 'can_edit_config_files'
+      - 'can_show_templates'
+      - 'can_edit_templates'
+      - 'can_index_menu'
+      - 'can_show_menu'
+      - 'can_create_menu'
+      - 'can_edit_menu'
+      - 'can_delete_menu'
+  generals:
+    name: "Общие"
+    internal_name: "Generals"
+    text: "Общие"
+    Permissions:
+      - 'can_observe_machines'
+  security:
+    name: "Секретность I уровня"
+    internal_name: "SecurityI"
+    text: "Пользователи, обладающие первым уровням доступа к секретной информации"
+    ldap_branch: "security"
+    children:
+      highSecurity:
+        name: "Секретность II уровня"
+        internal_name: "SecurityII"
+        text: "Пользователи, обладающие вторым уровням доступа к секретной информации"
+        ldap_branch: "highSecurity"
+        children:
+          redZone:
+            name: "Красная зона"
+            internal_name: "redZone"
+            text: "Доступ к комнатам 'красной зоны'"
+            ldap_branch: "redZone"
+            children:
+              cleanRoom:
+                name: "Доступ к комнату уборщика"
+                internal_name: "cleanRoom"
+                text: "Открывает доступ к швабре и половой тряпке"
+                ldap_branch: "cleanRoom"
+          greenZone:
+            name: "Зеленая зона"
+            internal_name: "greenZone"
+            text: "Доступ к комнатам 'зеленой зоны'"
+            ldap_branch: "greenZone"
+          blackZone:
+            name: "Черная зона"
+            internal_name: "blackZone"
+            text: "Доступ к комнатам 'черной зоны'"
+            ldap_branch: "blackZone"
+      scientists:
+        name: "Внутренние специалисты"
+        internal_name: "Scientists"
+        text: "Ученые, обладающие базовым уровнем доступа к секретной информации и доступом в лабаратории"
+        ldap_branch: "scientists"
+      warehouse:
+        name: "Сотрудники склада"
+        internal_name: "Warehouse"
+        text: "Сотрудники, имеющие право на доступ к реактивам, которые располагаются на складе"
+        ldap_branch: "warehouse"
+
+  cost-manager:
+    name: "Менеджер затрат"
+    internal_name: "CostManager"
+    text: "Менеджер затрат"
+    Permissions:
+      #периодическая затрата
+      - can_create_bn_periodical_cost
+      - can_show_bn_periodical_cost
+      - can_index_bn_periodical_costs
+      - can_edit_bn_periodical_cost
+      - can_delete_bn_periodical_cost
+      - can_show_bn_branch_rentability
+  cost-auditor:
+    name: "Аудитор затрат"
+    internal_name: "CostAuditor"
+    text: "Аудитор затрат"
+    Permissions:
+      - can_index_bn_periodical_costs
+      - can_show_bn_branch_rentability

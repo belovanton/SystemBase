@@ -1,0 +1,23 @@
+imports:
+    - lib/mink/behat.yml
+default:
+    paths:
+        features:       %%BEHAT_CONFIG_PATH%%/../test/features/apps/
+        steps:
+          - '%%BEHAT_CONFIG_PATH%%/../test/features/steps'
+        bootstrap:
+          - '%%BEHAT_CONFIG_PATH%%/../test/features/support/bootstrap.php'
+        environment:
+          - '%%BEHAT_CONFIG_PATH%%/../test/features/support/env.php'
+        hooks:          
+          - '%%BEHAT_CONFIG_PATH%%/../test/features/support/hooks.php'
+    environment:
+        parameters:
+            start_url: false
+            base_url:  http://mask/
+            base_application: frontend
+            base_environment: dev
+nr:
+    environment:
+        parameters:
+            reload_dump:		false
